@@ -1,0 +1,31 @@
+{
+  "name": "@poool/eslint-config",
+  "version": "0.0.1-alpha.1",
+  "description": "Common ESLint rules we share between projects at Poool",
+  "main": "index.js",
+  "repository": "https://github.com/p3ol/eslint-config.git",
+  "author": "Ugo Stephant <ugo@poool.fr>",
+  "license": "MIT",
+  "peerDependencies": {
+    "babel-eslint": ">=10",
+    "eslint": ">=6",
+    "eslint-config-standard": ">=14",
+    "eslint-plugin-babel": ">=5",
+    "eslint-plugin-import": ">=2",
+    "eslint-plugin-node": ">=11",
+    "eslint-plugin-promise": ">=4",
+    "eslint-plugin-react": ">=7",
+    "eslint-plugin-standard": ">=4"
+  },
+  "devDependencies": {
+    "babel-eslint": "10.1.0",
+    "eslint": "6.8.0",
+    "eslint-config-standard": "14.1.1",
+    "eslint-plugin-babel": "5.3.0",
+    "eslint-plugin-import": "2.20.2",
+    "eslint-plugin-node": "11.1.0",
+    "eslint-plugin-promise": "4.2.1",
+    "eslint-plugin-react": "7.20.0",
+    "eslint-plugin-standard": "4.0.1"
+  }
+}
