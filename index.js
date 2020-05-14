@@ -5,7 +5,7 @@ const ERROR = 2;
 module.exports = {
   extends: [
     './common',
-    './node',
-    './browser',
+    './backend',
+    './frontend',
   ].map(require.resolve),
 };
