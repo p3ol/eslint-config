@@ -37,6 +37,9 @@ module.exports = {
     'new-cap': OFF,
     'max-len': WARNING,
     'object-curly-newline': OFF,
-    'object-property-newline': OFF
+    'object-property-newline': OFF,
+
+    // Standard
+    'standard/no-callback-literal': OFF,
   },
 };
