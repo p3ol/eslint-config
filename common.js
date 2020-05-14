@@ -14,13 +14,13 @@ module.exports = {
   ],
   rules: {
     'comma-dangle': [WARNING, {
-      'arrays': 'always-multiline',
-      'objects': 'always-multiline',
-      'imports': 'always-multiline',
-      'exports': 'always-multiline',
-      'functions': 'ignore',
+      arrays: 'always-multiline',
+      objects: 'always-multiline',
+      imports: 'always-multiline',
+      exports: 'always-multiline',
+      functions: 'ignore',
     }],
-    'semi': [ERROR, 'always'],
+    semi: [ERROR, 'always'],
     'no-unused-vars': [WARNING, {
       varsIgnorePattern: '^_',
       argsIgnorePattern: '.+',
