@@ -12,14 +12,15 @@ npx install-peerdeps -Y @poool/eslint-config
 ## Usage
 
 ```json
-extends: ["@poool"]
+extends: ["@poool/eslint-config"]
 ```
 
 Available subconfigs:
-- `common`
-- `frontend`
-- `backend`
+- `common` -> For basic Javascript project, ES2020 enabled
+- `frontend` -> Common, but with React & browser globals
+- `backend` -> Common, but for node globals
 
+Example:
 ```json
-extends: ["@poool/frontend"]
+extends: ["@poool/eslint-config/frontend"]
 ```
