@@ -15,4 +15,9 @@ module.exports = {
     'babel',
     'react',
   ],
+  settings: {
+    react: {
+      version: 'detect',
+    },
+  },
 };
