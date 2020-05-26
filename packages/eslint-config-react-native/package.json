@@ -1,6 +1,6 @@
 {
   "name": "@poool/eslint-config-react-native",
-  "version": "0.0.1-alpha.3",
+  "version": "0.0.1-alpha.4",
   "description": "Common ESLint rules we share between React Native projects at Poool",
   "main": "index.js",
   "repository": {
@@ -11,12 +11,12 @@
   "author": "Ugo Stephant <ugo@poool.fr>",
   "license": "MIT",
   "peerDependencies": {
+    "@poool/eslint-config": "^0.0.1-alpha.3",
     "eslint": "^6.8.0 || ^7.0.0",
-    "eslint-plugin-react-native": "^3.8.1",
-    "@poool/eslint-config": "^0.0.1-alpha.3"
+    "eslint-plugin-react-native": "^3.8.1"
   },
   "devDependencies": {
-    "@poool/eslint-config-react": "0.0.1-alpha.3",
+    "@poool/eslint-config-react": "^0.0.1-alpha.4",
     "eslint": "7.1.0",
     "eslint-plugin-react-native": "3.8.1"
   },
