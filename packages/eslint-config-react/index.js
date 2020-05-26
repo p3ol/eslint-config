@@ -1,3 +1,5 @@
+const OFF = 0;
+
 module.exports = {
   env: {
     browser: true,
@@ -19,5 +21,9 @@ module.exports = {
     react: {
       version: 'detect',
     },
+  },
+  rules: {
+    'react/display-name': OFF,
+    'react/no-children-prop': OFF,
   },
 };
