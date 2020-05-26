@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.0.1-alpha.6](https://github.com/p3ol/eslint-config/compare/v0.0.1-alpha.5...v0.0.1-alpha.6) (2020-05-26)
+
+
+### Bug Fixes
+
+* **react-native:** force display-name as warning ([8fcdef8](https://github.com/p3ol/eslint-config/commit/8fcdef8d197a8679ff90c4f99ff75fb49b333f91))
+
+
+
+
+
 ## [0.0.1-alpha.5](https://github.com/p3ol/eslint-config/compare/v0.0.1-alpha.4...v0.0.1-alpha.5) (2020-05-26)
 
 **Note:** Version bump only for package @poool/eslint-config-react-native

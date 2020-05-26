@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.0.1-alpha.6](https://github.com/p3ol/eslint-config/compare/v0.0.1-alpha.5...v0.0.1-alpha.6) (2020-05-26)
+
+
+### Bug Fixes
+
+* **config:** fix false positive using optional chaining ([75878ce](https://github.com/p3ol/eslint-config/commit/75878cec02f525e057b6cd97053c68092fd95b48))
+* **react:** disable react specific rules ([e3b28aa](https://github.com/p3ol/eslint-config/commit/e3b28aa75e09d1dbf8eccb0e8130bef64013faaa))
+* **react-native:** force display-name as warning ([8fcdef8](https://github.com/p3ol/eslint-config/commit/8fcdef8d197a8679ff90c4f99ff75fb49b333f91))
+
+
+
+
+
 ## [0.0.1-alpha.5](https://github.com/p3ol/eslint-config/compare/v0.0.1-alpha.4...v0.0.1-alpha.5) (2020-05-26)
 
 
