@@ -39,6 +39,10 @@ module.exports = {
     'object-curly-newline': OFF,
     'object-property-newline': OFF,
 
+    // ES6 fixes
+    'no-unused-expressions': OFF,
+    'babel/no-unused-expressions': WARNING,
+
     // Standard
     'standard/no-callback-literal': OFF,
   },
