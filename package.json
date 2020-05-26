@@ -1,21 +1,13 @@
 {
-  "name": "@poool/eslint-config",
-  "version": "0.0.1-alpha.3",
-  "description": "Common ESLint rules we share between projects at Poool",
-  "main": "index.js",
-  "repository": "https://github.com/p3ol/eslint-config.git",
-  "author": "Ugo Stephant <ugo@poool.fr>",
-  "license": "MIT",
-  "peerDependencies": {
-    "babel-eslint": "^10.1.0",
-    "eslint": "^6.8.0 || ^7.0.0",
-    "eslint-config-standard": "^14.1.1",
-    "eslint-plugin-babel": "^5.3.0",
-    "eslint-plugin-import": "^2.20.2",
-    "eslint-plugin-node": "^11.1.0",
-    "eslint-plugin-promise": "^4.2.1",
-    "eslint-plugin-react": "^7.20.0",
-    "eslint-plugin-standard": "^4.0.1"
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "lerna": "./node_modules/.bin/lerna",
+    "unlink-all": "./node_modules/.bin/lerna exec --parallel -- yarn unlink",
+    "link-all": "./node_modules/.bin/lerna exec --parallel -- yarn link",
+    "lint": "./node_modules/.bin/eslint ."
   },
   "devDependencies": {
     "babel-eslint": "10.1.0",
@@ -26,6 +18,8 @@
     "eslint-plugin-node": "11.1.0",
     "eslint-plugin-promise": "4.2.1",
     "eslint-plugin-react": "7.20.0",
-    "eslint-plugin-standard": "4.0.1"
+    "eslint-plugin-react-native": "3.8.1",
+    "eslint-plugin-standard": "4.0.1",
+    "lerna": "^3.22.0"
   }
 }

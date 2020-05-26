@@ -4,23 +4,11 @@
 
 ## Installation
 
-```bash
-yarn add @poool/eslint-config --dev
-npx install-peerdeps -Y @poool/eslint-config
-```
+You can take a look at each individual package to find the configuration that fits your needs:
 
-## Usage
-
-```json
-extends: ["@poool/eslint-config"]
-```
-
-Available subconfigs:
-- `common` -> For basic Javascript project, ES2020 enabled
-- `frontend` -> Common, but with React & browser globals
-- `backend` -> Common, but for node globals
-
-Example:
-```json
-extends: ["@poool/eslint-config/frontend"]
-```
+| Name | Description | |
+| --- | --- | --- |
+| `@poool/eslint-config` | Basic common config using eslint & standard recommended rules | [documentation](https://github.com/p3ol/eslint-config/blob/master/packages/eslint-config) |
+| `@poool/eslint-config-node` | Config for node projects | [documentation](https://github.com/p3ol/eslint-config/blob/master/packages/eslint-config-node) |
+| `@poool/eslint-config-react` | Config for front-ent React projects | [documentation](https://github.com/p3ol/eslint-config/blob/master/packages/eslint-config-react) |
+| `@poool/eslint-config-react-native` | Config for React Native projects | [documentation](https://github.com/p3ol/eslint-config/blob/master/packages/eslint-config-react-native) |

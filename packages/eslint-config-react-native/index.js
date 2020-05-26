@@ -1,8 +1,12 @@
 module.exports = {
   env: {
-    browser: true,
+    browser: false,
+    'react-native/react-native': true,
   },
-  extends: [require.resolve('./common'), 'plugin:react/recommended'],
+  extends: [
+    '@poool/eslint-config-react',
+    'plugin:react-native/all',
+  ],
   parser: 'babel-eslint',
   parserOptions: {
     ecmaVersion: 2020,
@@ -12,8 +16,7 @@ module.exports = {
     },
   },
   plugins: [
-    'babel',
-    'react',
+    'react-native',
   ],
   settings: {
     react: {

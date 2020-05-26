@@ -1,5 +1,5 @@
 module.exports = {
-  extends: [require.resolve('./common')],
+  extends: ['@poool/eslint-config'],
   env: {
     node: true,
   },
