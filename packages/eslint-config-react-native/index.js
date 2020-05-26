@@ -1,3 +1,5 @@
+const WARNING = 1;
+
 module.exports = {
   env: {
     browser: false,
@@ -22,5 +24,8 @@ module.exports = {
     react: {
       version: 'detect',
     },
+  },
+  rules: {
+    'react/display-name': WARNING,
   },
 };
