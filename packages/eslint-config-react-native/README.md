@@ -5,7 +5,9 @@
 ## Installation
 
 ```bash
-npx install-peerdeps -Y @poool/eslint-config-react-native
+npx install-peerdeps -Y --dev @poool/eslint-config
+npx install-peerdeps -Y --dev @poool/eslint-config-react
+npx install-peerdeps -Y --dev @poool/eslint-config-react-native
 ```
 
 ## Usage

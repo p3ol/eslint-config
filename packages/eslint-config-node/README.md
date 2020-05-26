@@ -5,7 +5,8 @@
 ## Installation
 
 ```bash
-npx install-peerdeps -Y @poool/eslint-config-node
+npx install-peerdeps -Y --dev @poool/eslint-config
+npx install-peerdeps -Y --dev @poool/eslint-config-node
 ```
 
 ## Usage
