@@ -41,7 +41,7 @@ module.exports = {
 
     // ES6 fixes
     'no-unused-expressions': OFF,
-    'babel/no-unused-expressions': WARNING,
+    'babel/no-unused-expressions': [WARNING, { allowShortCircuit: true }],
 
     // Standard
     'standard/no-callback-literal': OFF,
