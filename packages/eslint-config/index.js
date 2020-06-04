@@ -38,6 +38,7 @@ module.exports = {
     'max-len': WARNING,
     'object-curly-newline': OFF,
     'object-property-newline': OFF,
+    'no-empty': [ERROR, { allowEmptyCatch: true }],
 
     // ES6 fixes
     'no-unused-expressions': OFF,
