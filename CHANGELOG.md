@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0](https://github.com/p3ol/eslint-config/compare/v0.0.1-alpha.6...v1.0.0) (2020-06-04)
+
+
+### Bug Fixes
+
+* **core:** allow pretty useful empty catches ([63604be](https://github.com/p3ol/eslint-config/commit/63604be2295e5ef423c148bb603aef6258d3384f))
+* **core:** allow pretty useful short circuits ([2eef349](https://github.com/p3ol/eslint-config/commit/2eef349b85174d6727723236a2fff6037cc4fdaf))
+
+
+
+
+
 ## [0.0.1-alpha.6](https://github.com/p3ol/eslint-config/compare/v0.0.1-alpha.5...v0.0.1-alpha.6) (2020-05-26)
 
 
