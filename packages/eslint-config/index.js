@@ -39,6 +39,7 @@ module.exports = {
     'object-curly-newline': OFF,
     'object-property-newline': OFF,
     'no-empty': [ERROR, { allowEmptyCatch: true }],
+    'no-extra-parens': [WARNING, 'all', { ignoreJSX: 'multi-line' }],
 
     // ES6 fixes
     'no-unused-expressions': OFF,
