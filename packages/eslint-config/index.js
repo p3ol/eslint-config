@@ -23,7 +23,7 @@ module.exports = {
     semi: [ERROR, 'always'],
     'no-unused-vars': [WARNING, {
       varsIgnorePattern: '^_',
-      argsIgnorePattern: '.+',
+      argsIgnorePattern: '^_',
     }],
     'no-multiple-empty-lines': WARNING,
     'eol-last': OFF,
