@@ -26,7 +26,7 @@ module.exports = {
       argsIgnorePattern: '^_',
     }],
     'no-multiple-empty-lines': WARNING,
-    'eol-last': OFF,
+    'eol-last': [WARNING, 'always'],
     'no-trailing-spaces': [WARNING, { skipBlankLines: true }],
     'no-console': [WARNING, {
       allow: ['warn', 'error', 'time', 'timeEnd', 'timeStamp'],
