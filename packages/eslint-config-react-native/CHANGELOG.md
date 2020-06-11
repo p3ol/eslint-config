@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.2](https://github.com/p3ol/eslint-config/compare/v1.0.1...v1.0.2) (2020-06-11)
+
+
+### Bug Fixes
+
+* **config-react-native:** update peer dep ([95b1441](https://github.com/p3ol/eslint-config/commit/95b1441e0f3af5e6ff68c3f7b3f302ec1bd7f0c0))
+
+
+
+
+
 ## [1.0.1](https://github.com/p3ol/eslint-config/compare/v1.0.0...v1.0.1) (2020-06-04)
 
 **Note:** Version bump only for package @poool/eslint-config-react-native

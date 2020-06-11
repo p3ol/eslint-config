@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.2](https://github.com/p3ol/eslint-config/compare/v1.0.1...v1.0.2) (2020-06-11)
+
+
+### Bug Fixes
+
+* **config-react:** update peer dep ([2195c0f](https://github.com/p3ol/eslint-config/commit/2195c0f272586307d5bbaa0e69efb56bc6921782))
+
+
+
+
+
 ## [1.0.1](https://github.com/p3ol/eslint-config/compare/v1.0.0...v1.0.1) (2020-06-04)
 
 **Note:** Version bump only for package @poool/eslint-config-react

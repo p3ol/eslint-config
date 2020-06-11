@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.2](https://github.com/p3ol/eslint-config/compare/v1.0.1...v1.0.2) (2020-06-11)
+
+
+### Bug Fixes
+
+* **config:** disallow extraneous parenthesis ([50fda4e](https://github.com/p3ol/eslint-config/commit/50fda4ec0b6638b8ce3e1c3d8345e8edc53651c7))
+* **config:** fix eol-last rule ([d193cdc](https://github.com/p3ol/eslint-config/commit/d193cdc1fef753f9d1c0b78501383c418c45c905))
+* **config:** update peer dep ([2fe17b3](https://github.com/p3ol/eslint-config/commit/2fe17b3736c901fc75c8991e029fb4574b68b68f))
+* **config:** yell for unused args if not explicitely stated ([69c889d](https://github.com/p3ol/eslint-config/commit/69c889dc9528cb491153979ece66f5a8f5ebd807))
+* **config-node:** update peer dep ([a4fa7c9](https://github.com/p3ol/eslint-config/commit/a4fa7c93d4ff731edb96cdeffab2972b9475eebe))
+* **config-react:** update peer dep ([2195c0f](https://github.com/p3ol/eslint-config/commit/2195c0f272586307d5bbaa0e69efb56bc6921782))
+* **config-react-native:** update peer dep ([95b1441](https://github.com/p3ol/eslint-config/commit/95b1441e0f3af5e6ff68c3f7b3f302ec1bd7f0c0))
+
+
+
+
+
 ## [1.0.1](https://github.com/p3ol/eslint-config/compare/v1.0.0...v1.0.1) (2020-06-04)
 
 **Note:** Version bump only for package eslint-config
