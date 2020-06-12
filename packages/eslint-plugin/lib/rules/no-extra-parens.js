@@ -8,7 +8,10 @@ module.exports = ruleComposer.filterReports(
   problem => {
     if (
       problem.node.type === 'ConditionalExpression' &&
-      problem.node.parent.type === 'SpreadElement'
+      (
+        problem.node.parent.type === 'SpreadElement' ||
+        problem.node.parent.type === 'ExperimentalSpreadProperty'
+      )
     ) {
       return false;
     }
