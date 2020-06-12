@@ -46,6 +46,10 @@ module.exports = {
     'no-empty': [ERROR, { allowEmptyCatch: true }],
 
     // ES6 fixes
+    camelcase: OFF,
+    'babel/camelcase': [WARNING, {
+      properties: 'never',
+    }],
     'no-unused-expressions': OFF,
     'babel/no-unused-expressions': [WARNING, { allowShortCircuit: true }],
 
