@@ -1,10 +1,10 @@
 const OFF = 0;
 
 module.exports = {
+  extends: ['@poool/eslint-config', 'plugin:react/recommended'],
   env: {
     browser: true,
   },
-  extends: ['@poool/eslint-config', 'plugin:react/recommended'],
   parser: 'babel-eslint',
   parserOptions: {
     ecmaVersion: 2020,
