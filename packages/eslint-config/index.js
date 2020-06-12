@@ -63,6 +63,7 @@ module.exports = {
     '@poool/no-extra-parens': [WARNING, 'all', {
       ignoreJSX: 'all',
       nestedBinaryExpressions: false,
+      enforceForNewInMemberExpressions: false,
     }],
   },
 };
