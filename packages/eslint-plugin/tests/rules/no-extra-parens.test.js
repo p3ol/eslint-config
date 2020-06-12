@@ -14,6 +14,12 @@ runner.run('no-extra-parens', rule, {
       } : { bar: 'foo' }),
     })`,
     'const a = (1 + 1) * 2;',
+    {
+      code: 'const a = (true && true) || (true && true);',
+      options: ['all', {
+        nestedBinaryExpressions: false,
+      }],
+    },
   ],
   invalid: [
     {
@@ -43,6 +49,11 @@ runner.run('no-extra-parens', rule, {
       code: 'const a = (1 * 1) + 1;',
       errors: ['Unnecessary parentheses around expression.'],
       output: 'const a = 1 * 1 + 1;',
+    },
+    {
+      code: 'const a = (true && true) && (true && true);',
+      errors: ['Unnecessary parentheses around expression.'],
+      output: 'const a = true && true && (true && true);',
     },
   ],
 });
