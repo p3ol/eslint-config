@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.4](https://github.com/p3ol/eslint-config/compare/v1.1.3...v1.1.4) (2020-06-12)
+
+
+### Bug Fixes
+
+* **plugin:** allow parens around spread with logical expressions ([8ed4693](https://github.com/p3ol/eslint-config/commit/8ed46935646909ae49397eae560333f5f824b35a))
+
+
+
+
+
 ## [1.1.3](https://github.com/p3ol/eslint-config/compare/v1.1.2...v1.1.3) (2020-06-12)
 
 **Note:** Version bump only for package @poool/eslint-plugin
