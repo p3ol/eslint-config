@@ -51,7 +51,10 @@ module.exports = {
       properties: 'never',
     }],
     'no-unused-expressions': OFF,
-    'babel/no-unused-expressions': [WARNING, { allowShortCircuit: true }],
+    'babel/no-unused-expressions': [WARNING, {
+      allowShortCircuit: true,
+      allowTernary: true,
+    }],
 
     // Standard
     'standard/no-callback-literal': OFF,
