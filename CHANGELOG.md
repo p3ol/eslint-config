@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.3](https://github.com/p3ol/eslint-config/compare/v1.1.2...v1.1.3) (2020-06-12)
+
+
+### Bug Fixes
+
+* **config:** fix false-positives for nested binary expressions ([d126e4f](https://github.com/p3ol/eslint-config/commit/d126e4f1267f264f9aeac60a93819a79f02640a9))
+
+
+
+
+
 ## [1.1.2](https://github.com/p3ol/eslint-config/compare/v1.1.1...v1.1.2) (2020-06-12)
 
 
