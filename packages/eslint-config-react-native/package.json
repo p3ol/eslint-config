@@ -1,6 +1,6 @@
 {
   "name": "@poool/eslint-config-react-native",
-  "version": "1.0.3",
+  "version": "1.1.0",
   "description": "Common ESLint rules we share between React Native projects at Poool",
   "main": "index.js",
   "repository": {
@@ -17,7 +17,7 @@
     "eslint-plugin-react-native": "^3.8.1"
   },
   "devDependencies": {
-    "@poool/eslint-config-react": "^1.0.3",
+    "@poool/eslint-config-react": "^1.1.0",
     "eslint": "7.2.0",
     "eslint-plugin-react-native": "3.8.1"
   },

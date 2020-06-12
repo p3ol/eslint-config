@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.1.0](https://github.com/p3ol/eslint-config/compare/v1.0.3...v1.1.0) (2020-06-12)
+
+
+### Bug Fixes
+
+* **config:** allow no-unused-expressions with ternary expressions ([be5583d](https://github.com/p3ol/eslint-config/commit/be5583da7c854e538fb42f0b80c511f3f221ec86))
+* **config:** replace default camelcase rule with babel fix ([f2ed6e0](https://github.com/p3ol/eslint-config/commit/f2ed6e03a43db871841e65867a5ddb0363c7ec80))
+
+
+### Features
+
+* **config:** add new custom plugin to default shared config ([5dafa5d](https://github.com/p3ol/eslint-config/commit/5dafa5d2a67ee50bab05fca6a5a4320484a93b71))
+
+
+
+
+
 ## [1.0.3](https://github.com/p3ol/eslint-config/compare/v1.0.2...v1.0.3) (2020-06-11)
 
 
