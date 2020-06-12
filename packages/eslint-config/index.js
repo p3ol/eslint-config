@@ -58,5 +58,9 @@ module.exports = {
 
     // Standard
     'standard/no-callback-literal': OFF,
+
+    '@poool/no-extra-parens': [WARNING, 'all', {
+      ignoreJSX: 'all',
+    }],
   },
 };
