@@ -8,6 +8,7 @@ runner.run('no-extra-parens', rule, {
   valid: [
     '(() => {})()',
     '() => ({ ...(true ? { foo: "bar" } : { bar: "foo" }) })',
+    '() => ({ ...([] || []) })',
     `() => ({
       ...(true ? {
         foo: 'bar',
