@@ -11,6 +11,7 @@
   "author": "Ugo Stephant <ugo@poool.fr>",
   "license": "MIT",
   "peerDependencies": {
+    "@poool/eslint-plugin": "^1.0.4",
     "babel-eslint": "^10.1.0",
     "eslint": "^6.8.0 || ^7.2.0",
     "eslint-config-standard": "^14.1.1",
@@ -21,6 +22,7 @@
     "eslint-plugin-standard": "^4.0.1"
   },
   "devDependencies": {
+    "@poool/eslint-plugin": "1.0.3",
     "babel-eslint": "10.1.0",
     "eslint": "7.2.0",
     "eslint-config-standard": "14.1.1",

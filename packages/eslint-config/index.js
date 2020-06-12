@@ -3,7 +3,11 @@ const WARNING = 1;
 const ERROR = 2;
 
 module.exports = {
-  extends: ['eslint:recommended', 'standard'],
+  extends: [
+    'eslint:recommended',
+    'standard',
+    'plugin:@poool/eslint-plugin/recommended',
+  ],
   parser: 'babel-eslint',
   parserOptions: {
     ecmaVersion: 2020,
@@ -11,6 +15,7 @@ module.exports = {
   },
   plugins: [
     'babel',
+    '@poool/eslint-plugin',
   ],
   rules: {
     'comma-dangle': [WARNING, {
