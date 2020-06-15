@@ -5,13 +5,15 @@ const rule = new eslint.Linter().getRules().get('camelcase');
 
 const isOptionalPropertyAssigned = node =>
   node.type === 'Identifier' &&
-  node.parent.type === 'OptionalMemberExpression' &&
-  node.parent.parent.type === 'VariableDeclarator';
+  node.parent.type === 'OptionalMemberExpression';
 
 module.exports = ruleComposer.filterReports(
   rule,
   problem => {
-    if (isOptionalPropertyAssigned(problem.node)) {
+    if (
+      isOptionalPropertyAssigned(problem.node) &&
+      problem.messageId === 'notCamelCase'
+    ) {
       return false;
     }
 
