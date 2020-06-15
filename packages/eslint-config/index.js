@@ -48,9 +48,7 @@ module.exports = {
 
     // ES6 fixes
     camelcase: OFF,
-    'babel/camelcase': [WARNING, {
-      properties: 'never',
-    }],
+    'babel/camelcase': OFF,
     'no-unused-expressions': OFF,
     'babel/no-unused-expressions': [WARNING, {
       allowShortCircuit: true,
@@ -60,10 +58,15 @@ module.exports = {
     // Standard
     'standard/no-callback-literal': OFF,
 
+    // Custom rules
     '@poool/no-extra-parens': [WARNING, 'all', {
       ignoreJSX: 'all',
       nestedBinaryExpressions: false,
       enforceForNewInMemberExpressions: false,
+    }],
+    '@poool/camelcase': [ERROR, {
+      properties: 'never',
+      allow: ['^UNSAFE_'],
     }],
   },
 };
