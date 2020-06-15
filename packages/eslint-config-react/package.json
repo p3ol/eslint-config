@@ -1,6 +1,6 @@
 {
   "name": "@poool/eslint-config-react",
-  "version": "1.1.4",
+  "version": "1.1.5",
   "description": "Common ESLint rules we share between React projects at Poool",
   "main": "index.js",
   "repository": {
@@ -16,7 +16,7 @@
     "eslint-plugin-react": "^7.20.0"
   },
   "devDependencies": {
-    "@poool/eslint-config": "^1.1.4",
+    "@poool/eslint-config": "^1.1.5",
     "eslint": "7.2.0",
     "eslint-plugin-react": "7.20.0"
   },

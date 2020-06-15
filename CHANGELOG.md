@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.5](https://github.com/p3ol/eslint-config/compare/v1.1.4...v1.1.5) (2020-06-15)
+
+
+### Bug Fixes
+
+* **config:** avoid warnings for new expressions ([bf65995](https://github.com/p3ol/eslint-config/commit/bf65995a91976b133466e8a66879283e3ae9c067))
+
+
+
+
+
 ## [1.1.4](https://github.com/p3ol/eslint-config/compare/v1.1.3...v1.1.4) (2020-06-12)
 
 
