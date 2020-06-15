@@ -16,7 +16,7 @@ module.exports = {
       },
       rules: {
         'no-extra-parens': OFF,
-        '@poool/no-extra-parens': ERROR,
+        '@poool/no-extra-parens': WARNING,
         '@poool/camelcase': [ERROR, { allow: ['^UNSAFE_'] }],
       },
     },
