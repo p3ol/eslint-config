@@ -1,6 +1,6 @@
 {
   "name": "@poool/eslint-config",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "Common ESLint rules we share between projects at Poool",
   "main": "index.js",
   "repository": {
@@ -22,7 +22,7 @@
     "eslint-plugin-standard": "^4.0.1"
   },
   "devDependencies": {
-    "@poool/eslint-plugin": "^1.2.0",
+    "@poool/eslint-plugin": "^1.2.1",
     "babel-eslint": "10.1.0",
     "eslint": "7.2.0",
     "eslint-config-standard": "14.1.1",

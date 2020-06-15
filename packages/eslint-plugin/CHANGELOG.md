@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.2.1](https://github.com/p3ol/eslint-config/compare/v1.2.0...v1.2.1) (2020-06-15)
+
+
+### Bug Fixes
+
+* **plugin:** avoid only checking variable declarators ([631a6e6](https://github.com/p3ol/eslint-config/commit/631a6e6f9a2fdbb5403b88ed69011cdcdf8ddba9))
+
+
+
+
+
 # [1.2.0](https://github.com/p3ol/eslint-config/compare/v1.1.5...v1.2.0) (2020-06-15)
 
 
