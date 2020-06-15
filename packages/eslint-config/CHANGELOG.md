@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.2.0](https://github.com/p3ol/eslint-config/compare/v1.1.5...v1.2.0) (2020-06-15)
+
+
+### Features
+
+* add new custom camelcase rule to fix default rule with OptionalMemberExpressions ([d82498e](https://github.com/p3ol/eslint-config/commit/d82498eb8e587b19b026034cf7ae30eca027c188))
+
+
+
+
+
 ## [1.1.5](https://github.com/p3ol/eslint-config/compare/v1.1.4...v1.1.5) (2020-06-15)
 
 

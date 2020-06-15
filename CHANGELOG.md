@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.2.0](https://github.com/p3ol/eslint-config/compare/v1.1.5...v1.2.0) (2020-06-15)
+
+
+### Bug Fixes
+
+* **plugin:** allow extra parenthesis inside while condition ([988102f](https://github.com/p3ol/eslint-config/commit/988102fdacd2279cc758270dfd1436a695a51494))
+* **plugin:** downgrade extra parenthesis to warning by default ([72961e8](https://github.com/p3ol/eslint-config/commit/72961e83931b0c773417c0c50c0a0784538708d7))
+
+
+### Features
+
+* add new custom camelcase rule to fix default rule with OptionalMemberExpressions ([d82498e](https://github.com/p3ol/eslint-config/commit/d82498eb8e587b19b026034cf7ae30eca027c188))
+
+
+
+
+
 ## [1.1.5](https://github.com/p3ol/eslint-config/compare/v1.1.4...v1.1.5) (2020-06-15)
 
 
