@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.2.2](https://github.com/p3ol/eslint-config/compare/v1.2.1...v1.2.2) (2020-06-15)
+
+
+### Bug Fixes
+
+* **config:** fix missing enforceForSequenceExpressions option ([34d518e](https://github.com/p3ol/eslint-config/commit/34d518e76213023148f08ddf6fed79b603ee25ac))
+* **plugin:** handle spread over wrapped await ([b069546](https://github.com/p3ol/eslint-config/commit/b069546d32ba5b9e4a61d9f15a971d8bb91ed960))
+
+
+
+
+
 ## [1.2.1](https://github.com/p3ol/eslint-config/compare/v1.2.0...v1.2.1) (2020-06-15)
 
 
