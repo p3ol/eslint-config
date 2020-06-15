@@ -21,6 +21,12 @@ runner.run('no-extra-parens', rule, {
         nestedBinaryExpressions: false,
       }],
     },
+    {
+      code: 'let a; const q = []; while ((a = q.pop())) {}',
+      options: ['all', {
+        enforceForSequenceExpressions: false,
+      }],
+    },
   ],
   invalid: [
     {
@@ -55,6 +61,11 @@ runner.run('no-extra-parens', rule, {
       code: 'const a = (true && true) && (true && true);',
       errors: ['Unnecessary parentheses around expression.'],
       output: 'const a = true && true && (true && true);',
+    },
+    {
+      code: 'let a; const q = []; while ((a = q.pop())) {}',
+      errors: ['Unnecessary parentheses around expression.'],
+      output: 'let a; const q = []; while (a = q.pop()) {}',
     },
   ],
 });

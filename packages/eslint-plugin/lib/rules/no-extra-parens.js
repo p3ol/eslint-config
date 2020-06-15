@@ -12,10 +12,22 @@ const isConditionalOrLogicalSpread = node =>
     node.parent.type === 'ExperimentalSpreadProperty'
   );
 
+const isWhileAssignment = node =>
+  node.type === 'AssignmentExpression' &&
+  node.parent.type === 'WhileStatement';
+
 module.exports = ruleComposer.filterReports(
   rule,
-  problem => {
+  (problem, metadata) => {
     if (isConditionalOrLogicalSpread(problem.node)) {
+      return false;
+    }
+
+    if (
+      metadata.options[1] &&
+      metadata.options[1].enforceForSequenceExpressions === false &&
+      isWhileAssignment(problem.node)
+    ) {
       return false;
     }
 
