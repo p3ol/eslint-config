@@ -27,6 +27,7 @@ runner.run('no-extra-parens', rule, {
         enforceForSequenceExpressions: false,
       }],
     },
+    'async () => ({ ...(await Promise.resolve([])) })',
   ],
   invalid: [
     {

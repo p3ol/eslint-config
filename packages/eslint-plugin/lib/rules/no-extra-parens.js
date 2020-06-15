@@ -12,6 +12,11 @@ const isConditionalOrLogicalSpread = node =>
     node.parent.type === 'ExperimentalSpreadProperty'
   );
 
+const isAwaitSpread = node => node.type === 'AwaitExpression' && (
+  node.parent.type === 'SpreadElement' ||
+  node.parent.type === 'ExperimentalSpreadProperty'
+);
+
 const isWhileAssignment = node =>
   node.type === 'AssignmentExpression' &&
   node.parent.type === 'WhileStatement';
@@ -19,7 +24,10 @@ const isWhileAssignment = node =>
 module.exports = ruleComposer.filterReports(
   rule,
   (problem, metadata) => {
-    if (isConditionalOrLogicalSpread(problem.node)) {
+    if (
+      isConditionalOrLogicalSpread(problem.node) ||
+      isAwaitSpread(problem.node)
+    ) {
       return false;
     }
 
