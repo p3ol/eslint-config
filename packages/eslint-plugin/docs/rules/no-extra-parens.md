@@ -1,7 +1,7 @@
 # Disallow extra parentheses (`@poool/no-extra-parens`)
 
 Ensures there are no extra parentheses wrapping code.
-Add a twist to the default `no-extra-parens` that allows conditional spreads to be wrapper around parentheses, for better clarity.
+Add a twist to the default `no-extra-parens` that allows conditional spreads to be wrapped around parentheses, for better clarity.
 
 ## Rule Details
 
