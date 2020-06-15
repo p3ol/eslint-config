@@ -63,6 +63,7 @@ module.exports = {
       ignoreJSX: 'all',
       nestedBinaryExpressions: false,
       enforceForNewInMemberExpressions: false,
+      enforceForSequenceExpressions: false,
     }],
     '@poool/camelcase': [ERROR, {
       properties: 'never',
