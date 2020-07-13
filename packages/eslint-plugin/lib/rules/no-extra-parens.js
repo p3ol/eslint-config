@@ -21,12 +21,23 @@ const isWhileAssignment = node =>
   node.type === 'AssignmentExpression' &&
   node.parent.type === 'WhileStatement';
 
+const isNewSpread = node => node.type === 'NewExpression' && (
+  node.parent.type === 'SpreadElement' ||
+  node.parent.type === 'ExperimentalSpreadProperty'
+);
+
+const isDoubleUnaryAwait = node => node.type === 'AwaitExpression' &&
+  node.parent.type === 'UnaryExpression' &&
+  node.parent.parent.type === 'UnaryExpression';
+
 module.exports = ruleComposer.filterReports(
   rule,
   (problem, metadata) => {
     if (
       isConditionalOrLogicalSpread(problem.node) ||
-      isAwaitSpread(problem.node)
+      isAwaitSpread(problem.node) ||
+      isNewSpread(problem.node) ||
+      isDoubleUnaryAwait(problem.node)
     ) {
       return false;
     }

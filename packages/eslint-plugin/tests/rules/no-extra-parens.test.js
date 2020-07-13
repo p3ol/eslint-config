@@ -28,6 +28,14 @@ runner.run('no-extra-parens', rule, {
       }],
     },
     'async () => ({ ...(await Promise.resolve([])) })',
+    'const foo = [...(new Date())];',
+    {
+      code: 'const foo = (new Date()).getTime();',
+      options: ['all', {
+        enforceForNewInMemberExpressions: false,
+      }],
+    },
+    'async () => { const foo = !!(await Promise.resolve()); }',
   ],
   invalid: [
     {
@@ -67,6 +75,11 @@ runner.run('no-extra-parens', rule, {
       code: 'let a; const q = []; while ((a = q.pop())) {}',
       errors: ['Unnecessary parentheses around expression.'],
       output: 'let a; const q = []; while (a = q.pop()) {}',
+    },
+    {
+      code: 'const foo = (new Date());',
+      errors: ['Unnecessary parentheses around expression.'],
+      output: 'const foo = new Date();',
     },
   ],
 });
