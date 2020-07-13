@@ -1,6 +1,6 @@
 {
   "name": "@poool/eslint-plugin",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "description": "Custom set of ESLint rules we need and enforce at Poool",
   "main": "lib/index.js",
   "repository": {
