@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.2.5](https://github.com/p3ol/eslint-config/compare/v1.2.4...v1.2.5) (2020-10-26)
+
+
+### Bug Fixes
+
+* **config:** fix config standard v15 offsetTernaryExpressions option ([b98fa3d](https://github.com/p3ol/eslint-config/commit/b98fa3d59591f53bbf7c09466d8619ae3ed6f692))
+
+
+
+
+
 ## [1.2.4](https://github.com/p3ol/eslint-config/compare/v1.2.3...v1.2.4) (2020-10-26)
 
 
