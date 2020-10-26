@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.2.4](https://github.com/p3ol/eslint-config/compare/v1.2.3...v1.2.4) (2020-10-26)
+
+
+### Bug Fixes
+
+* **deps:** update peer deps ([1f77344](https://github.com/p3ol/eslint-config/commit/1f7734430978afc9b7391d3d2b07ca82596bc1b0))
+
+
+
+
+
 ## [1.2.3](https://github.com/p3ol/eslint-config/compare/v1.2.2...v1.2.3) (2020-07-13)
 
 **Note:** Version bump only for package @poool/eslint-config-node

@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.2.4](https://github.com/p3ol/eslint-config/compare/v1.2.3...v1.2.4) (2020-10-26)
+
+
+### Bug Fixes
+
+* **plugin:** allow multiline wrapping parens for conditional & arrow expressions ([afed7c0](https://github.com/p3ol/eslint-config/commit/afed7c09a4e64d73511202308948471f78f4ec69))
+
+
+
+
+
 ## [1.2.3](https://github.com/p3ol/eslint-config/compare/v1.2.2...v1.2.3) (2020-07-13)
 
 
