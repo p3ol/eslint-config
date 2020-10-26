@@ -36,6 +36,12 @@ runner.run('no-extra-parens', rule, {
       }],
     },
     'async () => { const foo = !!(await Promise.resolve()); }',
+    `const a = [].map(i => (
+      i
+    ));`,
+    `const a = b ? (
+      'test'
+    ) : false;`,
   ],
   invalid: [
     {
@@ -80,6 +86,16 @@ runner.run('no-extra-parens', rule, {
       code: 'const foo = (new Date());',
       errors: ['Unnecessary parentheses around expression.'],
       output: 'const foo = new Date();',
+    },
+    {
+      code: 'const foo = [].map(i => (i));',
+      errors: ['Unnecessary parentheses around expression.'],
+      output: 'const foo = [].map(i => i);',
+    },
+    {
+      code: 'const foo = b ? (\'test\') : false;',
+      errors: ['Unnecessary parentheses around expression.'],
+      output: 'const foo = b ? \'test\' : false;',
     },
   ],
 });

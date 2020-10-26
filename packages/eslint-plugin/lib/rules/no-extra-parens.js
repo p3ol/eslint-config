@@ -30,6 +30,15 @@ const isDoubleUnaryAwait = node => node.type === 'AwaitExpression' &&
   node.parent.type === 'UnaryExpression' &&
   node.parent.parent.type === 'UnaryExpression';
 
+const isMultilineArrowExpression = node =>
+  node.parent.type === 'ArrowFunctionExpression' &&
+  node.parent.loc.start.line !== node.parent.loc.end.line;
+
+const isMultilineConditionalExpression = node =>
+  node.parent.type === 'ConditionalExpression' &&
+  node.parent.loc.start.line !== node.parent.loc.end.line &&
+  node !== node.parent.test;
+
 module.exports = ruleComposer.filterReports(
   rule,
   (problem, metadata) => {
@@ -37,7 +46,9 @@ module.exports = ruleComposer.filterReports(
       isConditionalOrLogicalSpread(problem.node) ||
       isAwaitSpread(problem.node) ||
       isNewSpread(problem.node) ||
-      isDoubleUnaryAwait(problem.node)
+      isDoubleUnaryAwait(problem.node) ||
+      isMultilineArrowExpression(problem.node) ||
+      isMultilineConditionalExpression(problem.node)
     ) {
       return false;
     }
