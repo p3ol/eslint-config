@@ -45,6 +45,7 @@ module.exports = {
     'object-property-newline': OFF,
     'no-empty': [ERROR, { allowEmptyCatch: true }],
     'arrow-parens': [WARNING, 'as-needed'],
+    'multiline-ternary': OFF,
 
     // ES6 fixes
     camelcase: OFF,
