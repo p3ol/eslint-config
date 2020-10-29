@@ -3,7 +3,7 @@ const { RuleTester } = require('eslint');
 const rule = require('../../lib/rules/camelcase');
 
 const runner = new RuleTester({
-  parser: require.resolve('babel-eslint'),
+  parser: require.resolve('@babel/eslint-parser'),
   parserOptions: { ecmaVersion: 2020 },
 });
 

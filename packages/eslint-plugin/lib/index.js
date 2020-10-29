@@ -10,7 +10,7 @@ module.exports = {
   configs: {
     recommended: {
       plugins: ['@poool/eslint-plugin'],
-      parser: 'babel-eslint',
+      parser: '@babel/eslint-parser',
       parserOptions: {
         ecmaVersion: 2020,
       },
