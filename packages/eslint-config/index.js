@@ -46,6 +46,7 @@ module.exports = {
     'no-empty': [ERROR, { allowEmptyCatch: true }],
     'arrow-parens': [WARNING, 'as-needed'],
     'multiline-ternary': OFF,
+    'default-param-last': OFF,
     indent: [ERROR, 2, {
       SwitchCase: 1,
       VariableDeclarator: 1,
