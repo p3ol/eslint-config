@@ -3,6 +3,24 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.3.0](https://github.com/p3ol/eslint-config/compare/v1.2.5...v1.3.0) (2020-10-29)
+
+
+### Bug Fixes
+
+* get rid of eslint-plugin-standard ([e574c85](https://github.com/p3ol/eslint-config/commit/e574c85e45aedbc3fc2ddd1538aceea71e0c7efc))
+
+
+### Features
+
+* **config:** replace babel-eslint with @babel/eslint-parser ([2b4b6c4](https://github.com/p3ol/eslint-config/commit/2b4b6c42e4000b1312edf4d3156b0ce85289e857))
+* **config:** update peerdeps requirements ([3fed5b2](https://github.com/p3ol/eslint-config/commit/3fed5b25f9b19cd280c945a5e21b4d35965b107f))
+* **plugin:** force require eslint 7 ([38e7f79](https://github.com/p3ol/eslint-config/commit/38e7f79046d07787f9eac5f2b3de8187a65a2855))
+
+
+
+
+
 ## [1.2.5](https://github.com/p3ol/eslint-config/compare/v1.2.4...v1.2.5) (2020-10-26)
 
 

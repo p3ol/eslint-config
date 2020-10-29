@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.3.0](https://github.com/p3ol/eslint-config/compare/v1.2.5...v1.3.0) (2020-10-29)
+
+
+### Features
+
+* **plugin:** force require eslint 7 ([38e7f79](https://github.com/p3ol/eslint-config/commit/38e7f79046d07787f9eac5f2b3de8187a65a2855))
+
+
+
+
+
 ## [1.2.4](https://github.com/p3ol/eslint-config/compare/v1.2.3...v1.2.4) (2020-10-26)
 
 
