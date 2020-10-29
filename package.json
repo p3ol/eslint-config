@@ -10,7 +10,8 @@
     "lint": "./node_modules/.bin/eslint ."
   },
   "devDependencies": {
-    "babel-eslint": "10.1.0",
+    "@babel/core": "7.12.3",
+    "@babel/eslint-parser": "7.12.1",
     "eslint": "7.12.1",
     "eslint-config-standard": "16.0.0",
     "eslint-plugin-babel": "5.3.1",
