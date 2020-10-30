@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.3.2](https://github.com/p3ol/eslint-config/compare/v1.3.1...v1.3.2) (2020-10-30)
+
+
+### Bug Fixes
+
+* remove remaining references to babel-eslint ([2549419](https://github.com/p3ol/eslint-config/commit/254941969d7ef549f5c95f3ad9e6e3d176e0fc75))
+
+
+
+
+
 ## [1.3.1](https://github.com/p3ol/eslint-config/compare/v1.3.0...v1.3.1) (2020-10-29)
 
 **Note:** Version bump only for package @poool/eslint-config-react
