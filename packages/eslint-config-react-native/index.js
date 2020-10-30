@@ -9,7 +9,7 @@ module.exports = {
     '@poool/eslint-config-react',
     'plugin:react-native/all',
   ],
-  parser: 'babel-eslint',
+  parser: '@babel/eslint-parser',
   parserOptions: {
     ecmaVersion: 2020,
     sourceType: 'module',
