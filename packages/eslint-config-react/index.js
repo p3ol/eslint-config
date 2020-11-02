@@ -14,7 +14,6 @@ module.exports = {
     },
   },
   plugins: [
-    'babel',
     'react',
   ],
   settings: {
