@@ -64,6 +64,7 @@ module.exports = {
       ignoredNodes: ['TemplateLiteral *'],
       offsetTernaryExpressions: false,
     }],
+    'template-curly-spacing': OFF,
 
     // ES6 fixes
     'no-unused-expressions': OFF,
