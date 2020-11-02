@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.3.3](https://github.com/p3ol/eslint-config/compare/v1.3.2...v1.3.3) (2020-11-02)
+
+
+### Bug Fixes
+
+* **config:** replace old eslint-plugin-babel with new @babel/eslint-plugin ([2fe9311](https://github.com/p3ol/eslint-config/commit/2fe9311b4e1c3f5448b5cf57506dda4cbf3cddf5))
+
+
+
+
+
 ## [1.3.1](https://github.com/p3ol/eslint-config/compare/v1.3.0...v1.3.1) (2020-10-29)
 
 
