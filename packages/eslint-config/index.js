@@ -14,7 +14,7 @@ module.exports = {
     sourceType: 'module',
   },
   plugins: [
-    'babel',
+    '@babel',
     '@poool/eslint-plugin',
   ],
   rules: {
@@ -47,6 +47,7 @@ module.exports = {
     'arrow-parens': [WARNING, 'as-needed'],
     'multiline-ternary': OFF,
     'default-param-last': OFF,
+    camelcase: OFF,
     indent: [ERROR, 2, {
       SwitchCase: 1,
       VariableDeclarator: 1,
@@ -65,10 +66,8 @@ module.exports = {
     }],
 
     // ES6 fixes
-    camelcase: OFF,
-    'babel/camelcase': OFF,
     'no-unused-expressions': OFF,
-    'babel/no-unused-expressions': [WARNING, {
+    '@babel/no-unused-expressions': [WARNING, {
       allowShortCircuit: true,
       allowTernary: true,
     }],
