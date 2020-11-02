@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.3.6](https://github.com/p3ol/eslint-config/compare/v1.3.5...v1.3.6) (2020-11-02)
+
+
+### Bug Fixes
+
+* **config:** fix indent rule ([1bb810b](https://github.com/p3ol/eslint-config/commit/1bb810b9e903542963649d98a021f70b69df9e94))
+* **config:** update ecma version ([ff59feb](https://github.com/p3ol/eslint-config/commit/ff59feb99b06b1fa2a7ea4f1254c1017eab5b33c))
+
+
+
+
+
 ## [1.3.5](https://github.com/p3ol/eslint-config/compare/v1.3.4...v1.3.5) (2020-11-02)
 
 
