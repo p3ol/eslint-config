@@ -61,7 +61,7 @@ module.exports = {
       ImportDeclaration: 1,
       flatTernaryExpressions: false,
       ignoreComments: false,
-      ignoredNodes: ['TemplateLiteral *'],
+      ignoredNodes: ['TemplateLiteral'],
       offsetTernaryExpressions: false,
     }],
     'template-curly-spacing': OFF,
