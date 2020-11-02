@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.3.5](https://github.com/p3ol/eslint-config/compare/v1.3.4...v1.3.5) (2020-11-02)
+
+
+### Bug Fixes
+
+* **config:** temporarily disable template-curly ([bfd4307](https://github.com/p3ol/eslint-config/commit/bfd4307be25a8447e5ae94eff52be6941398242c))
+
+
+
+
+
 ## [1.3.4](https://github.com/p3ol/eslint-config/compare/v1.3.3...v1.3.4) (2020-11-02)
 
 
