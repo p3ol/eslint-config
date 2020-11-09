@@ -15,7 +15,7 @@
   },
   "devDependencies": {
     "eslint": "7.13.0",
-    "jest": "26.6.2"
+    "jest": "26.6.3"
   },
   "dependencies": {
     "eslint-rule-composer": "0.3.0"
