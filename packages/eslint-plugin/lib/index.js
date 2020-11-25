@@ -6,6 +6,7 @@ module.exports = {
   rules: {
     camelcase: require('./rules/camelcase'),
     'no-extra-parens': require('./rules/no-extra-parens'),
+    'no-unneeded-ternary': require('./rules/no-unneeded-ternary'),
   },
   configs: {
     recommended: {
@@ -18,6 +19,8 @@ module.exports = {
         'no-extra-parens': OFF,
         '@poool/no-extra-parens': WARNING,
         '@poool/camelcase': [ERROR, { allow: ['^UNSAFE_'] }],
+        'no-unneeded-ternary': OFF,
+        '@poool/no-unneeded-ternary': ERROR,
       },
     },
   },
