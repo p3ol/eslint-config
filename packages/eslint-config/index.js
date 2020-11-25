@@ -87,5 +87,6 @@ module.exports = {
       properties: 'never',
       allow: ['^UNSAFE_'],
     }],
+    '@poool/no-unneeded-ternary': ERROR,
   },
 };
