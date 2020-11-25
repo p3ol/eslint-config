@@ -76,6 +76,9 @@ module.exports = {
     // Standard
     'standard/no-callback-literal': OFF,
 
+    // Import
+    'import/newline-after-import': WARNING,
+
     // Custom rules
     '@poool/no-extra-parens': [WARNING, 'all', {
       ignoreJSX: 'all',
