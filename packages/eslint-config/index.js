@@ -32,7 +32,7 @@ module.exports = {
     }],
     'no-multiple-empty-lines': WARNING,
     'eol-last': [WARNING, 'always'],
-    'no-trailing-spaces': [WARNING, { skipBlankLines: true }],
+    'no-trailing-spaces': WARNING,
     'no-console': [WARNING, {
       allow: ['warn', 'error', 'time', 'timeEnd', 'timeStamp'],
     }],
