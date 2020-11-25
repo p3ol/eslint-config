@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.4.0](https://github.com/p3ol/eslint-config/compare/v1.3.6...v1.4.0) (2020-11-25)
+
+
+### Features
+
+* **plugin:** extend no-unneeded-ternary for expression statements ([ce64c32](https://github.com/p3ol/eslint-config/commit/ce64c328ae56ff1c568c27f9c9f7532b072fe5bb))
+
+
+
+
+
 ## [1.3.3](https://github.com/p3ol/eslint-config/compare/v1.3.2...v1.3.3) (2020-11-02)
 
 **Note:** Version bump only for package @poool/eslint-plugin

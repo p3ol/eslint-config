@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.4.0](https://github.com/p3ol/eslint-config/compare/v1.3.6...v1.4.0) (2020-11-25)
+
+
+### Bug Fixes
+
+* **config:** don't skip blank lines with no-trailing-spaces ([6f10dbe](https://github.com/p3ol/eslint-config/commit/6f10dbeddc8265634ca8b212cc2fecfbd311d178))
+
+
+### Features
+
+* **config:** enable import/newline-after-import ([bc09469](https://github.com/p3ol/eslint-config/commit/bc09469b0be43d30742ec19bc701c41c1e6c046e))
+* **config:** enable import/order ([8e123d4](https://github.com/p3ol/eslint-config/commit/8e123d49853ed00834694ce29e3a9172e92997a5))
+* **config:** enable padding-line-between-statements ([090e3e3](https://github.com/p3ol/eslint-config/commit/090e3e332695b5d3b9f48c9c88073e7785caa51c))
+* **config:** enforce custom no-unneeded-ternary ([99e954b](https://github.com/p3ol/eslint-config/commit/99e954b3e094f0793cdb9fac1b6a41f3e56fd709))
+
+
+
+
+
 ## [1.3.6](https://github.com/p3ol/eslint-config/compare/v1.3.5...v1.3.6) (2020-11-02)
 
 
