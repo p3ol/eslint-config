@@ -24,7 +24,9 @@ Finally, enable all the rules you would like to use (don't forget to disable the
 {
   "rules": {
     "no-extra-parens": "off",
-    "@poool/no-extra-parens": "error"
+    "@poool/no-extra-parens": "error",
+    "no-unneeded-ternary": "off",
+    "@poool/no-unneeded-ternary": "error"
   }
 }
 ```
@@ -35,6 +37,7 @@ Finally, enable all the rules you would like to use (don't forget to disable the
 | ---- | ----------- | ------- |
 | `@poool/camelcase` | [`camelcase`](https://eslint.org/docs/rules/camelcase), but doesn't complain about optional chaining | [documentation](https://github.com/p3ol/eslint-config/tree/master/packages/eslint-plugin/docs/rules/camelcase.md) |
 | `@poool/no-extra-parens` | [`no-extra-parens`](https://eslint.org/docs/rules/no-extra-parens), but allows conditional spreads to be wrapped with parentheses | [documentation](https://github.com/p3ol/eslint-config/tree/master/packages/eslint-plugin/docs/rules/no-extra-parens.md) |
+| `@poool/no-unneeded-ternary` | [`no-unneeded-ternary`](https://eslint.org/docs/rules/no-unneeded-ternary), but with an extra condition to disallow ternary expressions as expression statements | [documentation](https://github.com/p3ol/eslint-config/tree/master/packages/eslint-plugin/docs/rules/no-unneeded-ternary.md) |
 
 ## Shareable configurations
 
