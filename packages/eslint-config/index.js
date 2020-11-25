@@ -78,6 +78,10 @@ module.exports = {
 
     // Import
     'import/newline-after-import': WARNING,
+    'import/order': [WARNING, {
+      groups: ['builtin', 'external', ['parent', 'sibling', 'index']],
+      'newlines-between': 'always',
+    }],
 
     // Custom rules
     '@poool/no-extra-parens': [WARNING, 'all', {
