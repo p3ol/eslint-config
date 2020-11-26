@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.4.1](https://github.com/p3ol/eslint-config/compare/v1.4.0...v1.4.1) (2020-11-26)
+
+
+### Bug Fixes
+
+* **config:** fix wrong path groups in import/order ([ad730a3](https://github.com/p3ol/eslint-config/commit/ad730a3f7f38d7805b221f2dbe7e38046f8e5e7e))
+
+
+
+
+
 # [1.4.0](https://github.com/p3ol/eslint-config/compare/v1.3.6...v1.4.0) (2020-11-25)
 
 
