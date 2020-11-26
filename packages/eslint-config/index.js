@@ -90,6 +90,17 @@ module.exports = {
     'import/order': [WARNING, {
       groups: ['builtin', 'external', ['parent', 'sibling', 'index']],
       'newlines-between': 'always',
+      pathGroups: [{
+        pattern: '*.{styl,css}',
+        patternOptions: { matchBase: true, nocase: true },
+        group: 'index',
+        position: 'after',
+      }, {
+        pattern: '*.{svg,png,jpeg,jpg,gif}',
+        patternOptions: { matchBase: true, nocase: true },
+        group: 'index',
+        position: 'after',
+      }],
     }],
 
     // Custom rules
