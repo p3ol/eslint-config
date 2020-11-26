@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.4.2](https://github.com/p3ol/eslint-config/compare/v1.4.1...v1.4.2) (2020-11-26)
+
+
+### Bug Fixes
+
+* **config-react-native:** adapt import/order rule for react-native ([b001f9c](https://github.com/p3ol/eslint-config/commit/b001f9c527b16e00662764bf6b9d36e6164665cf))
+
+
+
+
+
 ## [1.4.1](https://github.com/p3ol/eslint-config/compare/v1.4.0...v1.4.1) (2020-11-26)
 
 **Note:** Version bump only for package @poool/eslint-config-react-native

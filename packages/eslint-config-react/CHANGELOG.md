@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.4.2](https://github.com/p3ol/eslint-config/compare/v1.4.1...v1.4.2) (2020-11-26)
+
+
+### Bug Fixes
+
+* **config-react:** adapt import/order rule for react projects ([bc47ea1](https://github.com/p3ol/eslint-config/commit/bc47ea1a7bbcc55f22b993760e05c5a3bbb082be))
+
+
+
+
+
 ## [1.4.1](https://github.com/p3ol/eslint-config/compare/v1.4.0...v1.4.1) (2020-11-26)
 
 **Note:** Version bump only for package @poool/eslint-config-react
