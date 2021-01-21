@@ -26,7 +26,7 @@
     "@babel/eslint-parser": "7.12.1",
     "@babel/eslint-plugin": "7.12.1",
     "@poool/eslint-plugin": "^1.4.2",
-    "eslint": "7.16.0",
+    "eslint": "7.18.0",
     "eslint-config-standard": "16.0.2",
     "eslint-plugin-import": "2.22.1",
     "eslint-plugin-node": "11.1.0",
