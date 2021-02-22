@@ -16,7 +16,7 @@
     "eslint-plugin-react": "^7.20.0"
   },
   "devDependencies": {
-    "@poool/eslint-config": "^1.4.2",
+    "@poool/eslint-config": "1.4.2",
     "eslint": "7.19.0",
     "eslint-plugin-react": "7.22.0"
   },
