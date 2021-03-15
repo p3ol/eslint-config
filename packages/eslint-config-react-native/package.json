@@ -18,7 +18,7 @@
   },
   "devDependencies": {
     "@poool/eslint-config-react": "^1.4.2",
-    "eslint": "7.19.0",
+    "eslint": "7.22.0",
     "eslint-plugin-react-native": "3.10.0"
   },
   "publishConfig": {
