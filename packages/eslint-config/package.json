@@ -22,8 +22,8 @@
     "eslint-plugin-promise": "^4.2.1"
   },
   "devDependencies": {
-    "@babel/core": "7.13.10",
-    "@babel/eslint-parser": "7.13.10",
+    "@babel/core": "7.13.14",
+    "@babel/eslint-parser": "7.13.14",
     "@babel/eslint-plugin": "7.13.10",
     "@poool/eslint-plugin": "^1.4.2",
     "eslint": "7.22.0",
