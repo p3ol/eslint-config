@@ -33,7 +33,6 @@ module.exports = {
       component: true,
     }],
     'react/void-dom-elements-no-children': ERROR,
-    'react/jsx-boolean-value': [WARNING, 'always'],
     'react/jsx-closing-bracket-location': [WARNING, 'line-aligned'],
     'react/jsx-closing-tag-location': WARNING,
     'react/jsx-curly-brace-presence': [WARNING, {
@@ -41,8 +40,6 @@ module.exports = {
       children: 'never',
     }],
     'react/jsx-equals-spacing': [WARNING, 'never'],
-    'react/jsx-first-prop-new-line': [WARNING, 'multiline'],
-    'react/jsx-no-useless-fragment': WARNING,
     'react/jsx-pascal-case': WARNING,
     'react/jsx-props-no-multi-spaces': WARNING,
     'react/jsx-tag-spacing': [WARNING, {
