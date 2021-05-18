@@ -106,7 +106,6 @@ module.exports = {
     }],
     '@poool/camelcase': [ERROR, {
       properties: 'never',
-      allow: ['^UNSAFE_'],
     }],
     '@poool/no-unneeded-ternary': ERROR,
   },
