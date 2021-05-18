@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.5.0](https://github.com/p3ol/eslint-config/compare/v1.4.2...v1.5.0) (2021-05-18)
+
+
+### Features
+
+* **lib:** disallow unsafe methods ([971f7d6](https://github.com/p3ol/eslint-config/commit/971f7d631b83aa7e3bdfa0bcd9084029c5cb0d54))
+
+
+
+
+
 ## [1.4.2](https://github.com/p3ol/eslint-config/compare/v1.4.1...v1.4.2) (2020-11-26)
 
 
