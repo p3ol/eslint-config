@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.5.1](https://github.com/p3ol/eslint-config/compare/v1.5.0...v1.5.1) (2021-05-18)
+
+
+### Bug Fixes
+
+* **react:** remove unwanted rules ([92d78a0](https://github.com/p3ol/eslint-config/commit/92d78a0b4fd4b3bd4115cd78857c1f9bd407da73))
+* **react-native:** remove unwanted rules ([a6a5e59](https://github.com/p3ol/eslint-config/commit/a6a5e593a34f5aa41a5f73a3787bae8033806502))
+
+
+
+
+
 # [1.5.0](https://github.com/p3ol/eslint-config/compare/v1.4.2...v1.5.0) (2021-05-18)
 
 
