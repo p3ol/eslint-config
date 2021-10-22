@@ -15,9 +15,9 @@ jobs:
         uses: actions/checkout@v2
       - name: Setup node
         uses: actions/setup-node@v2
-      - name: Install deps
         with:
           node-version: 16
+      - name: Install deps
         run: yarn install
       - name: Eslint check
         run: yarn lint
