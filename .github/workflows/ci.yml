@@ -16,6 +16,8 @@ jobs:
       - name: Setup node
         uses: actions/setup-node@v2
       - name: Install deps
+        with:
+          node-version: 16
         run: yarn install
       - name: Eslint check
         run: yarn lint
@@ -25,7 +27,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        node: [10, 12, 14]
+        node: [12, 14, 16]
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
