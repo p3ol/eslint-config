@@ -19,7 +19,7 @@
     "eslint-config-standard": "^15.0.0 || ^16.0.0",
     "eslint-plugin-import": "^2.20.2",
     "eslint-plugin-node": "^11.1.0",
-    "eslint-plugin-promise": "^4.2.1 || ^5.0.0"
+    "eslint-plugin-promise": "^4.2.1 || ^5.0.0 || ^6.0.0"
   },
   "devDependencies": {
     "@babel/core": "7.16.0",
@@ -30,7 +30,7 @@
     "eslint-config-standard": "16.0.3",
     "eslint-plugin-import": "2.25.3",
     "eslint-plugin-node": "11.1.0",
-    "eslint-plugin-promise": "5.2.0"
+    "eslint-plugin-promise": "6.0.0"
   },
   "publishConfig": {
     "access": "public"
