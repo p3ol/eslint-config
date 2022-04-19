@@ -11,6 +11,8 @@ module.exports = {
   parserOptions: {
     ecmaVersion: 2021,
     sourceType: 'module',
+    requireConfigFile: false,
+    allowImportExportEverywhere: true,
     ecmaFeatures: {
       jsx: true,
     },
