@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.5.2](https://github.com/p3ol/eslint-config/compare/v1.5.1...v1.5.2) (2022-04-19)
+
+
+### Bug Fixes
+
+* allow to use config without babel config ([cc7215b](https://github.com/p3ol/eslint-config/commit/cc7215bdf17088884957751fbe46a32f44c0f617))
+
+
+
+
+
 # [1.5.0](https://github.com/p3ol/eslint-config/compare/v1.4.2...v1.5.0) (2021-05-18)
 
 
