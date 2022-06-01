@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.0.0](https://github.com/p3ol/eslint-config/compare/v1.5.2...v2.0.0) (2022-06-01)
+
+
+### Bug Fixes
+
+* remaining config standard 16 refs ([9996971](https://github.com/p3ol/eslint-config/commit/9996971c3957a7e375fc83a75dfa5a42500fdc70))
+* remaining node plugin references ([3027786](https://github.com/p3ol/eslint-config/commit/302778620fb4f92bef4425cfd59b044b8d72873f))
+
+
+
+
+
 ## [1.5.2](https://github.com/p3ol/eslint-config/compare/v1.5.1...v1.5.2) (2022-04-19)
 
 
