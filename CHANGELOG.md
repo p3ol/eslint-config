@@ -1,3 +1,19 @@
+# Change Log
+
+All notable changes to this project will be documented in this file.
+See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
+## [2.0.2](https://github.com/p3ol/eslint-config/compare/v2.0.1...v2.0.2) (2022-11-04)
+
+
+### Features
+
+* add sass import handling ([dd7c0c8](https://github.com/p3ol/eslint-config/commit/dd7c0c88327798d0d536a3f529135111daa1500c))
+
+
+
+
+
 # [](https://github.com/p3ol/eslint-config/compare/v2.0.1...v) (2022-09-15)
 
 
@@ -369,6 +385,3 @@
 ### Features
 
 * add config ([d6f74c4](https://github.com/p3ol/eslint-config/commit/d6f74c4aad2fad462631489800a82476cb368ebc))
-
-
-
