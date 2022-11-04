@@ -71,7 +71,7 @@ module.exports = {
       ],
       'newlines-between': 'always',
       pathGroups: [{
-        pattern: '*.{styl,css}',
+        pattern: '*.{styl,css,sass}',
         patternOptions: { matchBase: true, nocase: true },
         group: 'index',
         position: 'after',
