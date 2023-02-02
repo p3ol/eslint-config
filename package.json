@@ -11,7 +11,7 @@
     "test": "./node_modules/.bin/jest"
   },
   "devDependencies": {
-    "@babel/core": "7.20.5",
+    "@babel/core": "7.20.12",
     "@babel/eslint-parser": "7.19.1",
     "@babel/eslint-plugin": "7.19.1",
     "eslint": "8.33.0",
