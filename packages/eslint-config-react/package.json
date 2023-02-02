@@ -18,7 +18,7 @@
   "devDependencies": {
     "@poool/eslint-config": "^2.0.2",
     "eslint": "8.33.0",
-    "eslint-plugin-react": "7.31.11"
+    "eslint-plugin-react": "7.32.2"
   },
   "publishConfig": {
     "access": "public"
