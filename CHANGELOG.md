@@ -3,6 +3,24 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.0.0](https://github.com/p3ol/eslint-config/compare/v2.0.2...v3.0.0) (2023-06-08)
+
+
+### Bug Fixes
+
+* accept eslint-plugin-n v16 in peerDeps ([f9c8336](https://github.com/p3ol/eslint-config/commit/f9c833637dc7b62609b551c15429a28cce9ed376))
+* **renovate:** rename deprecated fields ([d51e7d0](https://github.com/p3ol/eslint-config/commit/d51e7d0e165731a8259ac224d0e1341fc1f810bf))
+
+
+### Features
+
+* **ci:** upgrade node major vesions tested ([1a99755](https://github.com/p3ol/eslint-config/commit/1a99755265c2c773abc575e9002417ee35e82d83))
+* upgrade eslint-plugin-n to v16 ([75891ff](https://github.com/p3ol/eslint-config/commit/75891ffddd0211320b2514a65459f1498f21831b))
+
+
+
+
+
 ## [2.0.2](https://github.com/p3ol/eslint-config/compare/v2.0.1...v2.0.2) (2022-11-04)
 
 

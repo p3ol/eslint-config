@@ -1,6 +1,6 @@
 {
   "name": "@poool/eslint-config",
-  "version": "2.0.2",
+  "version": "3.0.0",
   "description": "Common ESLint rules we share between projects at Poool",
   "main": "index.js",
   "repository": {
@@ -29,7 +29,7 @@
     "@babel/core": "7.22.1",
     "@babel/eslint-parser": "7.21.8",
     "@babel/eslint-plugin": "7.19.1",
-    "@poool/eslint-plugin": "^2.0.2",
+    "@poool/eslint-plugin": "^3.0.0",
     "eslint": "8.42.0",
     "eslint-config-standard": "17.1.0",
     "eslint-plugin-import": "2.27.5",
