@@ -3,8 +3,15 @@
     "config:base"
   ],
   "packageRules": [{
-    "updateTypes": ["patch", "pin"],
-    "depTypeList": ["devDependencies", "dependencies"],
+    "matchUpdateTypes": ["patch", "pin"],
+    "matchDepTypes": ["devDependencies", "dependencies"],
     "automerge": true
+  }, {
+    "matchUpdateTypes": ["minor", "major"],
+    "matchDepTypes": ["dependencies"],
+    "semanticCommitType": "feat"
+  }, {
+    "matchDepTypes": ["devDependencies"],
+    "prPriority": -1
   }]
 }
