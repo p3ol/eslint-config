@@ -18,7 +18,7 @@
     "@babel/core": "^7.2.0",
     "@babel/eslint-parser": "^7.2.0",
     "@babel/eslint-plugin": "^7.2.0",
-    "@poool/eslint-plugin": "^2.0.0",
+    "@poool/eslint-plugin": "^3.0.0",
     "eslint": "^7.2.0 || ^8.0.0",
     "eslint-config-standard": "^15.0.0 || ^16.0.0 || ^17.0.0",
     "eslint-plugin-import": "^2.20.2",
