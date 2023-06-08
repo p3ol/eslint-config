@@ -8,6 +8,10 @@
     "url": "https://github.com/p3ol/eslint-config.git",
     "directory": "packages/eslint-plugin"
   },
+  "engines": {
+    "node": ">= 16",
+    "yarn": "1"
+  },
   "author": "Ugo Stephant <ugo@poool.fr>",
   "license": "MIT",
   "peerDependencies": {
