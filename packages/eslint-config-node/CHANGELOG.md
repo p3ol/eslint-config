@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.0.1](https://github.com/p3ol/eslint-config/compare/v3.0.0...v3.0.1) (2023-06-09)
+
+
+### Bug Fixes
+
+* **deps:** bump peerDependencies between packages to v3 ([41c0919](https://github.com/p3ol/eslint-config/commit/41c09193f84a3502d71f74044da0b011862ecc11))
+
+
+
+
+
 # [3.0.0](https://github.com/p3ol/eslint-config/compare/v2.0.2...v3.0.0) (2023-06-08)
 
 
