@@ -21,7 +21,7 @@
   },
   "devDependencies": {
     "@poool/eslint-config": "^3.0.1",
-    "eslint": "8.43.0",
+    "eslint": "8.46.0",
     "eslint-plugin-n": "16.0.1"
   },
   "publishConfig": {

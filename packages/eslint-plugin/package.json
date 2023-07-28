@@ -18,7 +18,7 @@
     "eslint": "^7.2.0 || ^8.0.0"
   },
   "devDependencies": {
-    "eslint": "8.43.0"
+    "eslint": "8.46.0"
   },
   "dependencies": {
     "eslint-rule-composer": "0.3.0"
