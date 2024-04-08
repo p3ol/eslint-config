@@ -1,15 +1,23 @@
 # Poool ESLint Config - Common
 
-> Common ESLint rules we share between projects at Poool
+> Common ESLint/TSLint rules we share between projects at Poool
 
 ## Installation
 
 ```bash
-npx install-peerdeps -Y --dev @poool/eslint-config
+yarn add @poool/eslint-config --dev
 ```
 
 ## Usage
 
-```json
-extends: ["@poool/eslint-config"]
+```ts
+import eslint from '@eslint/js';
+import tseslint from 'typescript-eslint';
+import pooolint from '@poool/eslint-config';
+
+export default tseslint.config(
+  eslint.configs.recommended,
+  ...tseslint.configs.recommended,
+  ...pooolint.configs.recommended,
+);
 ```
