@@ -1,6 +1,5 @@
 import eslint from '@eslint/js';
 import tseslint from 'typescript-eslint';
-import { legacyPlugin } from './utils';
 
 const OFF = 0;
 const WARNING = 1;
@@ -9,17 +8,12 @@ const ERROR = 2;
 export const configs = {
   recommended: tseslint.config(
     eslint.configs.recommended,
-    ...tseslint.configs.recommended,
+    tseslint.configs.eslintRecommended,
     ...tseslint.configs.recommendedTypeChecked,
     ...tseslint.configs.stylisticTypeChecked,
     {
-      files: ['*.js'],
+      files: ['*.js', '*.cjs', '*.mjs'],
       ...tseslint.configs.disableTypeChecked,
-    },
-    {
-      plugins: {
-        import: legacyPlugin('eslint-plugin-import', 'import'),
-      },
     },
     {
       rules: {
@@ -92,16 +86,16 @@ export const configs = {
         // Import
         // TODO: bring back when import is compatible with v9 flat-config:
         // https://github.com/import-js/eslint-plugin-import/issues/2948
-        'import/newline-after-import': WARNING,
-        'import/order': [WARNING, {
-          groups: [
-            'builtin',
-            'external',
-            'internal',
-            ['parent', 'sibling', 'index', 'unknown'],
-          ],
-          'newlines-between': 'always',
-        }],
+        // 'import/newline-after-import': WARNING,
+        // 'import/order': [WARNING, {
+        //   groups: [
+        //     'builtin',
+        //     'external',
+        //     'internal',
+        //     ['parent', 'sibling', 'index', 'unknown'],
+        //   ],
+        //   'newlines-between': 'always',
+        // }],
       },
     },
   ),
