@@ -20,7 +20,7 @@
   },
   "dependencies": {
     "@poool/eslint-config": "^3.0.0",
-    "eslint-plugin-react": "7.34.1"
+    "eslint-plugin-react": "7.34.2"
   },
   "devDependencies": {
     "@poool/eslint-config": "workspace:*",

@@ -5,6 +5,6 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/p3ol/eslint-config.git",
-    "directory": "packages/@types/eslint-plugin-react"
+    "directory": "packages/types-eslint-plugin-react"
   }
 }

@@ -16,8 +16,6 @@ import tseslint from 'typescript-eslint';
 import pooolint from '@poool/eslint-config';
 
 export default tseslint.config(
-  eslint.configs.recommended,
-  ...tseslint.configs.recommended,
   ...pooolint.configs.recommended,
 );
 ```
