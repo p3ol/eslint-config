@@ -23,5 +23,5 @@
     "typescript": "5.4.4",
     "typescript-eslint": "7.5.0"
   },
-  "packageManager": "yarn@4.1.1"
+  "packageManager": "yarn@4.2.2"
 }
