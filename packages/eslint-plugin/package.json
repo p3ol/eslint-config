@@ -9,7 +9,7 @@
     "directory": "packages/eslint-plugin"
   },
   "engines": {
-    "node": ">= 16"
+    "node": ">= 18"
   },
   "author": "Ugo Stephant <ugo@poool.fr>",
   "license": "MIT",
