@@ -9,8 +9,7 @@
     "directory": "packages/eslint-config-react"
   },
   "engines": {
-    "node": ">= 16",
-    "yarn": "1"
+    "node": ">= 16"
   },
   "author": "Ugo Stephant <ugo@poool.fr>",
   "license": "MIT",
