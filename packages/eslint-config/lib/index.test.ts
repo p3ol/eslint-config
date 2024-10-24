@@ -5,7 +5,7 @@ import eslint, { type Linter } from 'eslint';
 import { configs } from './index';
 
 const config = [
-  ...configs.recommended as Linter.FlatConfig[],
+  ...configs.recommended as Linter.Config[],
   {
     languageOptions: {
       parserOptions: {

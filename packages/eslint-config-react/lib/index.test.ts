@@ -5,7 +5,7 @@ import eslint, { type Linter } from 'eslint';
 import { configs } from './index';
 
 const config = [
-  ...configs.recommended as Linter.FlatConfig[],
+  ...configs.recommended as Linter.Config[],
   {
     languageOptions: {
       parserOptions: {
@@ -13,7 +13,7 @@ const config = [
         tsconfigRootDir: path.resolve(__dirname),
       },
     },
-  } as Linter.FlatConfig,
+  } as Linter.Config,
 ];
 
 describe('@poool/eslint-config-react', () => {

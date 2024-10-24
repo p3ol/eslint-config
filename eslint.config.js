@@ -37,6 +37,12 @@ module.exports = tseslint.config(
     },
   },
   {
+    files: ['eslint.config.js'],
+    rules: {
+      '@typescript-eslint/no-require-imports': 0,
+    },
+  },
+  {
     files: ['*.tsx', '**/*.tsx'],
     ...pooolReactConfig.configs.react,
   },

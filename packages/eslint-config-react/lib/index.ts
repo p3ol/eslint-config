@@ -1,15 +1,17 @@
 import type { Linter } from 'eslint';
-
 import tseslint from 'typescript-eslint';
 import pooolint from '@poool/eslint-config';
-import reactlint from 'eslint-plugin-react';
+import reactPlugin from 'eslint-plugin-react';
 
 // const OFF = 0;
 const WARNING = 1;
 const ERROR = 2;
 
-const reactConfig: Linter.FlatConfig = {
-  plugins: { react: reactlint },
+const reactConfig: Linter.Config = {
+  // TODO: Remove type assertion when types are fixed in eslint-plugin-react
+  // - https://github.com/jsx-eslint/eslint-plugin-react/issues/3838
+  ...(reactPlugin.configs.flat?.recommended as Linter.Config),
+  ...(reactPlugin.configs.flat?.["jsx-runtime"] as Linter.Config),
   languageOptions: {
     parserOptions: {
       ecmaFeatures: {
@@ -59,26 +61,26 @@ const reactConfig: Linter.FlatConfig = {
     'jsx-quotes': [WARNING, 'prefer-double'],
 
     // import
-    // 'import/order': [WARNING, {
-    //   groups: [
-    //     'builtin',
-    //     'external',
-    //     'internal',
-    //     ['parent', 'sibling', 'index', 'unknown'],
-    //   ],
-    //   'newlines-between': 'always',
-    //   pathGroups: [{
-    //     pattern: '*.{styl,css,sass}',
-    //     patternOptions: { matchBase: true, nocase: true },
-    //     group: 'index',
-    //     position: 'after',
-    //   }, {
-    //     pattern: '*.{svg,png,jpeg,jpg,gif}',
-    //     patternOptions: { matchBase: true, nocase: true },
-    //     group: 'index',
-    //     position: 'after',
-    //   }],
-    // }],
+    'import-x/order': [WARNING, {
+      groups: [
+        'builtin',
+        'external',
+        'internal',
+        ['parent', 'sibling', 'index', 'unknown'],
+      ],
+      'newlines-between': 'always',
+      pathGroups: [{
+        pattern: '*.{styl,css,sass}',
+        patternOptions: { matchBase: true, nocase: true },
+        group: 'index',
+        position: 'after',
+      }, {
+        pattern: '*.{svg,png,jpeg,jpg,gif}',
+        patternOptions: { matchBase: true, nocase: true },
+        group: 'index',
+        position: 'after',
+      }],
+    }],
   },
 };
 

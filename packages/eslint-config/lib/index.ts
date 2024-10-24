@@ -1,3 +1,4 @@
+import importX from 'eslint-plugin-import-x';
 import eslint from '@eslint/js';
 import tseslint from 'typescript-eslint';
 
@@ -11,6 +12,7 @@ export const configs = {
     tseslint.configs.eslintRecommended,
     ...tseslint.configs.recommendedTypeChecked,
     ...tseslint.configs.stylisticTypeChecked,
+    importX.flatConfigs.recommended,
     {
       files: ['*.js', '*.cjs', '*.mjs'],
       ...tseslint.configs.disableTypeChecked,
@@ -81,21 +83,18 @@ export const configs = {
 
         // Typescript
         semi: OFF,
-        '@typescript-eslint/semi': [ERROR, 'always'],
 
         // Import
-        // TODO: bring back when import is compatible with v9 flat-config:
-        // https://github.com/import-js/eslint-plugin-import/issues/2948
-        // 'import/newline-after-import': WARNING,
-        // 'import/order': [WARNING, {
-        //   groups: [
-        //     'builtin',
-        //     'external',
-        //     'internal',
-        //     ['parent', 'sibling', 'index', 'unknown'],
-        //   ],
-        //   'newlines-between': 'always',
-        // }],
+        'import-x/newline-after-import': WARNING,
+        'import-x/order': [WARNING, {
+          groups: [
+            'builtin',
+            'external',
+            'internal',
+            ['parent', 'sibling', 'index', 'unknown'],
+          ],
+          'newlines-between': 'always',
+        }],
       },
     },
   ),

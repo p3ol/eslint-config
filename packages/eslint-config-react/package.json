@@ -16,15 +16,14 @@
   "license": "MIT",
   "peerDependencies": {
     "eslint": "^9.0.0",
-    "typescript-eslint": "^7.5.0"
+    "typescript-eslint": "^8.11.0"
   },
   "dependencies": {
     "@poool/eslint-config": "^3.0.0",
-    "eslint-plugin-react": "7.34.2"
+    "eslint-plugin-react": "7.37.2"
   },
   "devDependencies": {
-    "@poool/eslint-config": "workspace:*",
-    "@types/eslint-plugin-react": "workspace:*"
+    "@poool/eslint-config": "workspace:*"
   },
   "publishConfig": {
     "access": "public"
