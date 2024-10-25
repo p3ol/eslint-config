@@ -19,17 +19,16 @@
     "typescript-eslint": "^8.11.0"
   },
   "dependencies": {
-    "@poool/eslint-config": "^3.0.0",
     "eslint-plugin-react": "7.37.2"
   },
   "devDependencies": {
-    "@poool/eslint-config": "workspace:*"
+    "@poool/eslint-config": "workspace:^"
   },
   "publishConfig": {
     "access": "public"
   },
   "scripts": {
     "clean": "rm -rf ./dist || true",
-    "build": "yarn clean && tsc -p tsconfig.build.json"
+    "build": "tsc -p tsconfig.build.json"
   }
 }

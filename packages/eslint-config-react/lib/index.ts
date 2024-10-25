@@ -87,7 +87,7 @@ const reactConfig: Linter.Config = {
 export const configs = {
   recommended: tseslint.config(
     ...pooolint.configs.recommended,
-    reactConfig,
+    reactConfig
   ),
   react: reactConfig,
   base: pooolint.configs.recommended,

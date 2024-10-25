@@ -12,12 +12,14 @@
     "target": "ES2021",
     "noEmit": true,
     "allowJs": true,
-    "jsx": "react-jsx"
+    "jsx": "react-jsx",
+    "removeComments": true,
   },
   "include": [
     "**/*.ts",
     "**/*.tsx",
     "**/*.js",
     "**/*.jsx",
-  ]
+  ],
+  "exclude": ["**/dist/*"]
 }

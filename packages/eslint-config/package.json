@@ -15,20 +15,20 @@
   "author": "Ugo Stephant <ugo@poool.fr>",
   "license": "MIT",
   "peerDependencies": {
-    "eslint": "^9.0.0"
+    "eslint": "^9.0.0",
+    "typescript-eslint": "8.11.0"
   },
   "dependencies": {
     "@eslint/compat": "1.2.1",
     "@eslint/eslintrc": "3.1.0",
     "eslint-import-resolver-typescript": "3.6.3",
-    "eslint-plugin-import-x": "4.3.1",
-    "typescript-eslint": "8.11.0"
+    "eslint-plugin-import-x": "4.3.1"
   },
   "publishConfig": {
     "access": "public"
   },
   "scripts": {
     "clean": "rm -rf ./dist || true",
-    "build": "yarn clean && tsc -p tsconfig.build.json"
+    "build": "tsc -p tsconfig.build.json"
   }
 }

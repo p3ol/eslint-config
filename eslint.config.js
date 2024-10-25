@@ -1,8 +1,7 @@
 const tseslint = require('typescript-eslint');
 
-const pooolConfig = require('./packages/eslint-config/dist/index.js');
-const pooolReactConfig =
-  require('./packages/eslint-config-react/dist/index.js');
+const pooolConfig = require('@poool/eslint-config');
+const pooolReactConfig = require('@poool/eslint-config-react');
 
 module.exports = tseslint.config(
   {
@@ -12,7 +11,7 @@ module.exports = tseslint.config(
   {
     languageOptions: {
       parserOptions: {
-        project: true,
+        projectService: true,
         tsconfigRootDir: __dirname,
       },
     },
@@ -45,5 +44,5 @@ module.exports = tseslint.config(
   {
     files: ['*.tsx', '**/*.tsx'],
     ...pooolReactConfig.configs.react,
-  },
+  }
 );

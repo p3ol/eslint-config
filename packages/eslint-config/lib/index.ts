@@ -18,6 +18,16 @@ export const configs = {
       ...tseslint.configs.disableTypeChecked,
     },
     {
+      settings: {
+        'import-x/resolver': {
+          typescript: {
+            project: "packages/*/tsconfig.json",
+          },
+          node: true,
+        },
+      },
+    },
+    {
       rules: {
         'comma-dangle': [WARNING, {
           arrays: 'always-multiline',
@@ -96,7 +106,7 @@ export const configs = {
           'newlines-between': 'always',
         }],
       },
-    },
+    }
   ),
 };
 

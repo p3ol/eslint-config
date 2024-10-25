@@ -3,14 +3,18 @@
   "workspaces": [
     "packages/*"
   ],
+  "name": "poool",
   "scripts": {
     "lint": "eslint .",
     "test": "jest",
     "eslint-base": "yarn workspace @poool/eslint-config",
     "eslint-react": "yarn workspace @poool/eslint-config-react",
-    "build": "yarn turbo run build"
+    "clean": "turbo run clean",
+    "build": "turbo run build"
   },
   "devDependencies": {
+    "@poool/eslint-config": "workspace:^",
+    "@poool/eslint-config-react": "workspace:^",
     "@swc/core": "1.7.39  ",
     "@swc/jest": "0.2.36",
     "@types/eslint": "9.6.1",
