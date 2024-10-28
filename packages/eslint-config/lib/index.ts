@@ -1,6 +1,8 @@
 import importX from 'eslint-plugin-import-x';
 import eslint from '@eslint/js';
 import tseslint from 'typescript-eslint';
+import stylisticJs from '@stylistic/eslint-plugin-js';
+import stylisticTs from '@stylistic/eslint-plugin-ts';
 
 const OFF = 0;
 const WARNING = 1;
@@ -12,12 +14,12 @@ export const configs = {
     tseslint.configs.eslintRecommended,
     ...tseslint.configs.recommendedTypeChecked,
     ...tseslint.configs.stylisticTypeChecked,
-    importX.flatConfigs.recommended,
     {
       files: ['*.js', '*.cjs', '*.mjs'],
       ...tseslint.configs.disableTypeChecked,
     },
     {
+      ...importX.flatConfigs.recommended,
       settings: {
         'import-x/resolver': {
           typescript: {
@@ -28,52 +30,21 @@ export const configs = {
       },
     },
     {
+      plugins: {
+        '@stylistic/js': stylisticJs,
+        '@stylistic/ts': stylisticTs,
+      },
       rules: {
-        'comma-dangle': [WARNING, {
+        '@stylistic/js/arrow-parens': [WARNING, 'as-needed'],
+        '@stylistic/js/comma-dangle': [WARNING, {
           arrays: 'always-multiline',
           objects: 'always-multiline',
           imports: 'always-multiline',
           exports: 'always-multiline',
           functions: 'ignore',
         }],
-        'no-unused-vars': [WARNING, {
-          varsIgnorePattern: '^_',
-          argsIgnorePattern: '^_',
-        }],
-        'no-multiple-empty-lines': [WARNING, { max: 1 }],
-        'eol-last': [WARNING, 'always'],
-        'no-trailing-spaces': WARNING,
-        'no-console': [WARNING, {
-          allow: ['warn', 'error', 'time', 'timeEnd', 'timeStamp'],
-        }],
-        'padded-blocks': OFF,
-        'padding-line-between-statements': [
-          WARNING,
-          { blankLine: 'always', prev: '*', next: 'block' },
-          { blankLine: 'always', prev: 'block', next: '*' },
-          { blankLine: 'always', prev: '*', next: 'block-like' },
-          { blankLine: 'always', prev: 'block-like', next: '*' },
-          { blankLine: 'always', prev: '*', next: 'return' },
-          { blankLine: 'any', prev: '*', next: ['case', 'default'] },
-        ],
-        'spaced-comment': [WARNING, 'always'],
-        'space-before-function-paren': WARNING,
-        'new-cap': WARNING,
-        'max-len': [WARNING, {
-          code: 80,
-          ignorePattern: '^import .*',
-        }],
-        'object-curly-newline': OFF,
-        'object-property-newline': OFF,
-        'no-empty': [ERROR, { allowEmptyCatch: true }],
-        'arrow-parens': [WARNING, 'as-needed'],
-        'multiline-ternary': OFF,
-        'default-param-last': ERROR,
-        camelcase: [ERROR, {
-          properties: 'never',
-          ignoreDestructuring: true,
-        }],
-        indent: [ERROR, 2, {
+        '@stylistic/js/eol-last': [WARNING, 'always'],
+        '@stylistic/js/indent': [ERROR, 2, {
           SwitchCase: 1,
           VariableDeclarator: 1,
           outerIIFEBody: 1,
@@ -89,10 +60,48 @@ export const configs = {
           ignoredNodes: ['TemplateLiteral'],
           offsetTernaryExpressions: false,
         }],
-        'template-curly-spacing': ERROR,
+        '@stylistic/js/max-len': [WARNING, {
+          code: 80,
+          ignorePattern: '^import .*',
+        }],
+        '@stylistic/js/multiline-ternary': OFF,
+        '@stylistic/js/no-multiple-empty-lines': [WARNING, { max: 1 }],
+        '@stylistic/js/no-trailing-spaces': WARNING,
+        '@stylistic/js/object-curly-newline': OFF,
+        '@stylistic/js/object-property-newline': OFF,
+        '@stylistic/js/padded-blocks': OFF,
+        '@stylistic/js/padding-line-between-statements': [
+          WARNING,
+          { blankLine: 'always', prev: '*', next: 'block' },
+          { blankLine: 'always', prev: 'block', next: '*' },
+          { blankLine: 'always', prev: '*', next: 'block-like' },
+          { blankLine: 'always', prev: 'block-like', next: '*' },
+          { blankLine: 'always', prev: '*', next: 'return' },
+          { blankLine: 'any', prev: '*', next: ['case', 'default'] },
+        ],
+        '@stylistic/js/semi': ERROR,
+        '@stylistic/js/space-before-function-paren': WARNING,
+        '@stylistic/js/spaced-comment': [WARNING, 'always'],
+        '@stylistic/js/template-curly-spacing': ERROR,
+
+        // ESLint Built-in
+        'camelcase': [ERROR, {
+          properties: 'never',
+          ignoreDestructuring: true,
+        }],
+        'default-param-last': ERROR,
+        'new-cap': WARNING,
+        'no-console': [WARNING, {
+          allow: ['warn', 'error', 'time', 'timeEnd', 'timeStamp'],
+        }],
+        'no-empty': [ERROR, { allowEmptyCatch: true }],
+        'no-unused-vars': [WARNING, {
+          varsIgnorePattern: '^_',
+          argsIgnorePattern: '^_',
+        }],
 
         // Typescript
-        semi: OFF,
+        '@stylistic/ts/semi': OFF,
 
         // Import
         'import-x/newline-after-import': WARNING,
