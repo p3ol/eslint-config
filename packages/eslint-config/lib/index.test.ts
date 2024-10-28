@@ -9,7 +9,8 @@ const config = [
   {
     languageOptions: {
       parserOptions: {
-        project: true,
+        project: '../tsconfig.json',
+        tsconfigRootDir: path.resolve(__dirname),
       },
     },
   },
