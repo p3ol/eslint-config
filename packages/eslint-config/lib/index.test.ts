@@ -350,7 +350,8 @@ describe('@poool/eslint-config', () => {
     });
 
     it('should not warn on max len if line is an import', () => {
-      const code = `import { foo } from 'some-module-that-has-a-really-long-name/that-should-not-trigger-the-max-len-warning';`;
+      const code = `import { foo } from 'some-module-that-has-a-really-` +
+        `long-name/that-should-not-trigger-the-max-len-warning';`;
 
       expect(linter.verify(code, config, 'index.ts'))
         .not.toEqual(expect.arrayContaining([
@@ -360,7 +361,8 @@ describe('@poool/eslint-config', () => {
 
     it('should warn on max len', () => {
       const code = `
-        const foo = 'this is a really long line of code that should trigger the max len warning'; const bar = 'bar';
+        const foo = 'this is a really long line of code that should trigger ` +
+        `the max len warning'; const bar = 'bar';
       `;
 
       expect(linter.verify(code, config, 'index.ts'))
