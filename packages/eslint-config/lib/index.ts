@@ -102,6 +102,7 @@ export const configs = {
 
         // Typescript
         '@stylistic/ts/semi': OFF,
+        '@typescript-eslint/no-unused-vars': OFF,
 
         // Import
         'import-x/newline-after-import': WARNING,
