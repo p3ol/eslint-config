@@ -1,4 +1,4 @@
-import importX from 'eslint-plugin-import-x';
+import { flatConfigs } from 'eslint-plugin-import';
 import eslint from '@eslint/js';
 import tseslint from 'typescript-eslint';
 import stylisticJs from '@stylistic/eslint-plugin-js';
@@ -19,11 +19,14 @@ export const configs = {
       ...tseslint.configs.disableTypeChecked,
     },
     {
-      ...importX.flatConfigs.recommended,
+      ...flatConfigs.recommended,
       settings: {
-        'import-x/resolver': {
+        'import/parsers': {
+          '@typescript-eslint/parser': ['.ts', '.tsx'],
+        },
+        'import/resolver': {
           typescript: {
-            project: "packages/*/tsconfig.json",
+            project: 'packages/*/tsconfig.json',
           },
           node: true,
         },
@@ -105,8 +108,8 @@ export const configs = {
         '@typescript-eslint/no-unused-vars': OFF,
 
         // Import
-        'import-x/newline-after-import': WARNING,
-        'import-x/order': [WARNING, {
+        'import/newline-after-import': WARNING,
+        'import/order': [WARNING, {
           groups: [
             'builtin',
             'external',
@@ -115,6 +118,7 @@ export const configs = {
           ],
           'newlines-between': 'always',
         }],
+        'import/no-named-as-default-member': OFF,
       },
     }
   ),
