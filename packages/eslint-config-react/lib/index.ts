@@ -10,29 +10,15 @@ const ERROR = 2;
 const reactConfig: Linter.Config = {
   // TODO: Remove type assertion when types are fixed in eslint-plugin-react
   // - https://github.com/jsx-eslint/eslint-plugin-react/issues/3838
+  files: ['**/*.{jsx,tsx}'],
   ...(reactPlugin.configs.flat?.recommended as Linter.Config),
   ...(reactPlugin.configs.flat?.["jsx-runtime"] as Linter.Config),
-  languageOptions: {
-    parserOptions: {
-      ecmaFeatures: {
-        jsx: true,
-      },
-    },
-  },
   settings: {
     react: {
       version: 'detect',
     },
   },
   rules: {
-    'react/display-name': ERROR,
-    'react/no-children-prop': ERROR,
-    'react/no-this-in-sfc': ERROR,
-    'react/self-closing-comp': [WARNING, {
-      component: true,
-      html: true,
-    }],
-    'react/void-dom-elements-no-children': ERROR,
     'react/jsx-closing-bracket-location': [WARNING, 'line-aligned'],
     'react/jsx-closing-tag-location': WARNING,
     'react/jsx-curly-brace-presence': [WARNING, {
@@ -57,38 +43,22 @@ const reactConfig: Linter.Config = {
       logical: 'parens-new-line',
       prop: 'parens-new-line',
     }],
-
-    'jsx-quotes': [WARNING, 'prefer-double'],
-
-    // import
-    'import-x/order': [WARNING, {
-      groups: [
-        'builtin',
-        'external',
-        'internal',
-        ['parent', 'sibling', 'index', 'unknown'],
-      ],
-      'newlines-between': 'always',
-      pathGroups: [{
-        pattern: '*.{styl,css,sass}',
-        patternOptions: { matchBase: true, nocase: true },
-        group: 'index',
-        position: 'after',
-      }, {
-        pattern: '*.{svg,png,jpeg,jpg,gif}',
-        patternOptions: { matchBase: true, nocase: true },
-        group: 'index',
-        position: 'after',
-      }],
+    'react/no-children-prop': ERROR,
+    'react/no-this-in-sfc': ERROR,
+    'react/self-closing-comp': [WARNING, {
+      component: true,
+      html: true,
     }],
+    'react/void-dom-elements-no-children': ERROR,
+    'jsx-quotes': [WARNING, 'prefer-double'],
   },
 };
 
 export const configs = {
   recommended: tseslint.config(
     ...pooolint.configs.recommended,
-    reactConfig
+    reactConfig,
   ),
-  react: reactConfig,
-  base: pooolint.configs.recommended,
+  react: tseslint.config(reactConfig),
+  base: tseslint.config(...pooolint.configs.recommended),
 };

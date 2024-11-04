@@ -41,8 +41,5 @@ module.exports = tseslint.config(
       '@typescript-eslint/no-require-imports': 0,
     },
   },
-  {
-    files: ['*.tsx', '**/*.tsx'],
-    ...pooolReactConfig.configs.react,
-  }
+  ...pooolReactConfig.configs.react,
 );
