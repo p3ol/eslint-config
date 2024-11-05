@@ -7,6 +7,8 @@
   "scripts": {
     "lint": "eslint .",
     "test": "jest",
+    "test:react": "jest packages/eslint-config-react/",
+    "test:base": "jest packages/eslint-config/",
     "eslint-base": "yarn workspace @poool/eslint-config",
     "eslint-react": "yarn workspace @poool/eslint-config-react",
     "clean": "turbo run clean",
@@ -15,10 +17,9 @@
   "devDependencies": {
     "@poool/eslint-config": "workspace:^",
     "@poool/eslint-config-react": "workspace:^",
-    "@swc/core": "1.7.39  ",
+    "@swc/core": "1.7.39",
     "@swc/jest": "0.2.36",
     "@types/eslint": "9.6.1",
-    "@types/eslint__eslintrc": "2.1.2",
     "@types/eslint__js": "8.42.3",
     "@types/jest": "29.5.13",
     "@types/react": "18.3.11",

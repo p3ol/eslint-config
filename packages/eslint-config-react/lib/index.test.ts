@@ -1,22 +1,9 @@
-import path from 'node:path';
-
 import eslint, { type Linter } from 'eslint';
 
 import { configs } from './index';
 
 const config = [
   ...configs.react as Linter.Config[],
-  {
-    languageOptions: {
-      parserOptions: {
-        project: '../tsconfig.json',
-        tsconfigRootDir: path.resolve(__dirname),
-        ecmaFeatures: {
-          jsx: true,
-        },
-      },
-    },
-  } as Linter.Config,
 ];
 
 describe('@poool/eslint-config-react', () => {

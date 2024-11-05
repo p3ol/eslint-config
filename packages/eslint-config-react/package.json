@@ -18,11 +18,9 @@
     "eslint": "^9.0.0",
     "typescript-eslint": "^8.11.0"
   },
-  "dependencies": {
-    "eslint-plugin-react": "7.37.2"
-  },
   "devDependencies": {
-    "@poool/eslint-config": "workspace:^"
+    "@poool/eslint-config": "workspace:^",
+    "eslint-plugin-react": "7.37.2"
   },
   "publishConfig": {
     "access": "public"
