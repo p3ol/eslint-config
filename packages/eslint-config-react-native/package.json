@@ -17,12 +17,12 @@
   "peerDependencies": {
     "@poool/eslint-config": "^3.0.0",
     "@poool/eslint-config-react": "^3.0.0",
-    "eslint": "^6.8.0 || ^7.0.0 || ^8.0.0",
+    "eslint": "^6.8.0 || ^7.0.0 || ^8.0.0 || ^9.0.0",
     "eslint-plugin-react-native": "^3.8.1 || ^4.0.0"
   },
   "devDependencies": {
     "@poool/eslint-config-react": "^3.0.1",
-    "eslint": "8.47.0",
+    "eslint": "9.19.0",
     "eslint-plugin-react-native": "4.0.0"
   },
   "publishConfig": {
