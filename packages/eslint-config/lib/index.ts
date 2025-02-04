@@ -3,6 +3,7 @@ import eslint from '@eslint/js';
 import tseslint from 'typescript-eslint';
 import stylisticJs from '@stylistic/eslint-plugin-js';
 import stylisticTs from '@stylistic/eslint-plugin-ts';
+import jest from 'eslint-plugin-jest';
 
 const OFF = 0;
 const WARNING = 1;
@@ -15,8 +16,14 @@ export const configs = {
     ...tseslint.configs.recommendedTypeChecked,
     ...tseslint.configs.stylisticTypeChecked,
     {
-      files: ['*.js', '*.cjs', '*.mjs'],
+      files: ['**/*.js', '**/*.cjs', '**/*.mjs'],
       ...tseslint.configs.disableTypeChecked,
+      rules: {
+        ...tseslint.configs.disableTypeChecked.rules,
+        '@typescript-eslint/no-require-imports': OFF,
+        '@typescript-eslint/prefer-nullish-coalescing': OFF,
+        '@typescript-eslint/no-unused-vars': OFF,
+      },
     },
     {
       ...flatConfigs.recommended,
@@ -31,13 +38,20 @@ export const configs = {
       },
     },
     {
-      files: ['*.js', '*.cjs'],
+      files: ['**/*.js', '**/*.cjs'],
       languageOptions: {
         globals: {
           require: 'readonly',
           module: 'readonly',
+          global: 'readonly',
           __dirname: 'readonly',
         },
+      },
+      rules: {
+        'no-unused-vars': [WARNING, {
+          varsIgnorePattern: '^_',
+          argsIgnorePattern: '^_',
+        }],
       },
     },
     {
@@ -50,6 +64,7 @@ export const configs = {
           process: 'readonly',
           console: 'readonly',
           fetch: 'readonly',
+          Buffer: 'readonly',
         },
       },
       rules: {
@@ -122,10 +137,6 @@ export const configs = {
           argsIgnorePattern: '^_',
         }],
 
-        // Typescript
-        '@stylistic/ts/semi': OFF,
-        '@typescript-eslint/no-unused-vars': OFF,
-
         // Import
         'import/newline-after-import': WARNING,
         'import/order': [WARNING, {
@@ -137,9 +148,52 @@ export const configs = {
           ],
           'newlines-between': 'always',
         }],
+        'import/no-named-as-default': OFF,
         'import/no-named-as-default-member': OFF,
       },
-    }
+    },
+    // Typescript
+    {
+      files: ['**/*.ts', '**/*.tsx'],
+      rules: {
+        '@stylistic/ts/semi': OFF,
+        'no-unused-vars': OFF,
+        'default-param-last': OFF,
+        'no-undef': OFF,
+        '@typescript-eslint/no-unused-vars': [WARNING, {
+          varsIgnorePattern: '^_',
+          argsIgnorePattern: '^_',
+        }],
+        '@typescript-eslint/no-explicit-any': OFF,
+        '@typescript-eslint/prefer-nullish-coalescing': OFF,
+        '@typescript-eslint/no-inferrable-types': OFF,
+        '@typescript-eslint/no-unsafe-return': OFF,
+        '@typescript-eslint/unbound-method': OFF,
+        '@typescript-eslint/no-unsafe-argument': OFF,
+        '@typescript-eslint/no-unsafe-member-access': OFF,
+        '@typescript-eslint/no-base-to-string': OFF,
+        '@typescript-eslint/restrict-template-expressions': OFF,
+        '@typescript-eslint/no-empty-function': OFF,
+        '@typescript-eslint/no-floating-promises': OFF,
+        '@typescript-eslint/no-unsafe-call': OFF,
+        '@typescript-eslint/no-misused-promises': [ERROR, {
+          checksVoidReturn: false,
+        }],
+      },
+    },
+    // Jest
+    {
+      files: [
+        '**/*.test.js',
+        '**/*.test.ts',
+        '**/*.test.tsx',
+        'tests/**',
+      ],
+      plugins: { jest },
+      languageOptions: {
+        globals: jest.environments.globals.globals,
+      },
+    },
   ),
 };
 
