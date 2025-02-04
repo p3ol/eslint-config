@@ -25,9 +25,7 @@ export const configs = {
           '@typescript-eslint/parser': ['.ts', '.tsx'],
         },
         'import/resolver': {
-          typescript: {
-            project: 'packages/*/tsconfig.json',
-          },
+          typescript: true,
           node: true,
         },
       },
