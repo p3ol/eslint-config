@@ -20,6 +20,8 @@ jobs:
           cache: yarn
       - name: Install deps
         run: yarn install
+      - name: Build rules
+        run: yarn build
       - name: Eslint check
         run: yarn lint
 
@@ -40,5 +42,7 @@ jobs:
           cache: yarn
       - name: Install deps
         run: yarn install
+      - name: Build rules
+        run: yarn build
       - name: Test
         run: yarn test
