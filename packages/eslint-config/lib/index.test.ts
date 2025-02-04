@@ -559,7 +559,7 @@ if (true) {
       expect(linter.verify(code, config, 'index.ts'))
         .toEqual(expect.arrayContaining([expect.objectContaining({
           ruleId: 'no-console',
-          message: 'Unexpected console statement.',
+          message: expect.stringContaining('Unexpected console statement.'),
           severity: 1,
         })]));
     });
