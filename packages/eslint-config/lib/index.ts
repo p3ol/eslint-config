@@ -31,6 +31,16 @@ export const configs = {
       },
     },
     {
+      files: ['*.js', '*.cjs'],
+      languageOptions: {
+        globals: {
+          require: 'readonly',
+          module: 'readonly',
+          __dirname: 'readonly',
+        },
+      },
+    },
+    {
       plugins: {
         '@stylistic/js': stylisticJs,
         '@stylistic/ts': stylisticTs,
