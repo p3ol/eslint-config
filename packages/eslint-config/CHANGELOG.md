@@ -3,6 +3,20 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.0.1](https://github.com/p3ol/eslint-config/compare/v4.0.0...v4.0.1) (2025-02-04)
+
+
+### Bug Fixes
+
+* **base:** add missing globals for cjs ([a5b2cd2](https://github.com/p3ol/eslint-config/commit/a5b2cd23f03a832cabf338c2539c4ab5c5403771))
+* **base:** allow some node globals ([7ad9033](https://github.com/p3ol/eslint-config/commit/7ad9033b7ca4d91012ff85b864ff876dd09b7fe5))
+* **base:** missing quotes rule ([4178aae](https://github.com/p3ol/eslint-config/commit/4178aae7a6ec01e784c1d65207987a52426b791d))
+* **base:** wrong import config ([e75764c](https://github.com/p3ol/eslint-config/commit/e75764c25efab0a9c5d97ee631f4f2f257f58f2d))
+
+
+
+
+
 # [4.0.0](https://github.com/p3ol/eslint-config/compare/v3.0.1...v4.0.0) (2025-02-04)
 
 

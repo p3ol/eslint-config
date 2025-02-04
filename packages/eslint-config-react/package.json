@@ -1,6 +1,6 @@
 {
   "name": "@poool/eslint-config-react",
-  "version": "4.0.0",
+  "version": "4.0.1",
   "description": "Common ESLint rules we share between React projects at Poool",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
