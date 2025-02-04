@@ -2,29 +2,31 @@
   "name": "@poool/eslint-config-react",
   "version": "3.0.1",
   "description": "Common ESLint rules we share between React projects at Poool",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "repository": {
     "type": "git",
     "url": "https://github.com/p3ol/eslint-config.git",
     "directory": "packages/eslint-config-react"
   },
   "engines": {
-    "node": ">= 16",
-    "yarn": "1"
+    "node": ">=18"
   },
   "author": "Ugo Stephant <ugo@poool.fr>",
   "license": "MIT",
   "peerDependencies": {
-    "@poool/eslint-config": "^3.0.0",
-    "eslint": "^6.8.0 || ^7.0.0 || ^8.0.0",
-    "eslint-plugin-react": "^7.20.0"
+    "eslint": "^9.0.0",
+    "typescript-eslint": "^8.11.0"
   },
   "devDependencies": {
-    "@poool/eslint-config": "^3.0.1",
-    "eslint": "8.47.0",
-    "eslint-plugin-react": "7.33.1"
+    "@poool/eslint-config": "workspace:^",
+    "eslint-plugin-react": "7.37.4"
   },
   "publishConfig": {
     "access": "public"
+  },
+  "scripts": {
+    "clean": "rm -rf ./dist || true",
+    "build": "tsc -p tsconfig.build.json"
   }
 }
