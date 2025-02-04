@@ -8,11 +8,9 @@ const WARNING = 1;
 const ERROR = 2;
 
 const reactConfig: Linter.Config = {
-  // TODO: Remove type assertion when types are fixed in eslint-plugin-react
-  // - https://github.com/jsx-eslint/eslint-plugin-react/issues/3838
   files: ['**/*.{jsx,tsx}'],
-  ...(reactPlugin.configs.flat?.recommended as Linter.Config),
-  ...(reactPlugin.configs.flat?.['jsx-runtime'] as Linter.Config),
+  ...reactPlugin.configs.flat?.recommended,
+  ...reactPlugin.configs.flat?.['jsx-runtime'],
   settings: {
     react: {
       version: 'detect',
