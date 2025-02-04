@@ -12,7 +12,8 @@
     "eslint-base": "yarn workspace @poool/eslint-config",
     "eslint-react": "yarn workspace @poool/eslint-config-react",
     "clean": "turbo run clean",
-    "build": "turbo run build"
+    "build": "turbo run build",
+    "prepack": "yarn build && yarn lint && yarn tsc && yarn test"
   },
   "devDependencies": {
     "@poool/eslint-config": "workspace:^",
