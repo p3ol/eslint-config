@@ -503,7 +503,7 @@ if (true) {
 
       expect(linter.verify(code, config, 'index.ts'))
         .toEqual(expect.arrayContaining([expect.objectContaining({
-          ruleId: 'default-param-last',
+          ruleId: '@typescript-eslint/default-param-last',
           message: 'Default parameters should be last.',
           severity: 2,
         })]));
@@ -629,7 +629,7 @@ if (true) {
 
       expect(linter.verify(code, config, 'index.ts'))
         .toEqual(expect.arrayContaining([expect.objectContaining({
-          ruleId: 'no-unused-vars',
+          ruleId: '@typescript-eslint/no-unused-vars',
           message: expect
             .stringContaining('\'bar\' is assigned a value but never used.'),
           severity: 1,

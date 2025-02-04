@@ -164,6 +164,7 @@ export const configs = {
           varsIgnorePattern: '^_',
           argsIgnorePattern: '^_',
         }],
+        '@typescript-eslint/default-param-last': ERROR,
         '@typescript-eslint/no-explicit-any': OFF,
         '@typescript-eslint/prefer-nullish-coalescing': OFF,
         '@typescript-eslint/no-inferrable-types': OFF,
