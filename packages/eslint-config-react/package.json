@@ -20,7 +20,7 @@
   },
   "devDependencies": {
     "@poool/eslint-config": "workspace:^",
-    "eslint-plugin-react": "7.37.2"
+    "eslint-plugin-react": "7.37.4"
   },
   "publishConfig": {
     "access": "public"
