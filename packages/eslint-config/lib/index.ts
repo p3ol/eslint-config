@@ -37,6 +37,13 @@ export const configs = {
         '@stylistic/js': stylisticJs,
         '@stylistic/ts': stylisticTs,
       },
+      languageOptions: {
+        globals: {
+          process: 'readonly',
+          console: 'readonly',
+          fetch: 'readonly',
+        },
+      },
       rules: {
         '@stylistic/js/arrow-parens': [WARNING, 'as-needed'],
         '@stylistic/js/comma-dangle': [WARNING, {
