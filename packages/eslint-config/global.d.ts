@@ -1,6 +1,6 @@
 declare module '@eslint/eslintrc/universal';
 declare module 'eslint-plugin-import' {
-  import type { Linter } from "eslint";
+  import type { Linter } from 'eslint';
 
     export const flatConfigs: {
       recommended: Linter.Config,

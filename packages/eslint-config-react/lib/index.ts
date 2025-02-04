@@ -12,7 +12,7 @@ const reactConfig: Linter.Config = {
   // - https://github.com/jsx-eslint/eslint-plugin-react/issues/3838
   files: ['**/*.{jsx,tsx}'],
   ...(reactPlugin.configs.flat?.recommended as Linter.Config),
-  ...(reactPlugin.configs.flat?.["jsx-runtime"] as Linter.Config),
+  ...(reactPlugin.configs.flat?.['jsx-runtime'] as Linter.Config),
   settings: {
     react: {
       version: 'detect',
