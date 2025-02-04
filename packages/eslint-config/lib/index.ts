@@ -74,6 +74,10 @@ export const configs = {
           code: 80,
           ignorePattern: '^import .*',
         }],
+        '@stylistic/js/quotes': [WARNING, 'single', {
+          avoidEscape: true,
+          allowTemplateLiterals: 'always',
+        }],
         '@stylistic/js/multiline-ternary': OFF,
         '@stylistic/js/no-multiple-empty-lines': [WARNING, { max: 1 }],
         '@stylistic/js/no-trailing-spaces': WARNING,
