@@ -1507,7 +1507,7 @@ __metadata:
     eslint-plugin-react: "npm:7.37.4"
   peerDependencies:
     eslint: ^9.0.0
-    typescript-eslint: ^8.11.0
+    typescript-eslint: ^8.13.0
   languageName: unknown
   linkType: soft
 
@@ -1520,8 +1520,8 @@ __metadata:
     eslint-import-resolver-typescript: "npm:3.7.0"
     eslint-plugin-import: "npm:2.31.0"
   peerDependencies:
-    eslint: 9.14.0
-    typescript-eslint: 8.13.0
+    eslint: ^9.0.0
+    typescript-eslint: ^8.13.0
   languageName: unknown
   linkType: soft
 

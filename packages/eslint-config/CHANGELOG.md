@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [4.0.0](https://github.com/p3ol/eslint-config/compare/v3.0.1...v4.0.0) (2025-02-04)
+
+
+### Bug Fixes
+
+* a lot of flat config & ts issues ([b1f335e](https://github.com/p3ol/eslint-config/commit/b1f335e38d82702fa674a5e96acd1147695ca912))
+* disable ts no-unused-vars to prevent overriding ([c965704](https://github.com/p3ol/eslint-config/commit/c965704c34b16e1add6a9b7df48b7ce6d237ea61))
+* fix linting ([a12ca87](https://github.com/p3ol/eslint-config/commit/a12ca8718e72e9e0cfec1c80a78b5fa9201876fd))
+* fix linting and other stuff ([881a61b](https://github.com/p3ol/eslint-config/commit/881a61b0e2426c8237cd515672b7b75fd3babd6f))
+* fix parser options ([4bcec58](https://github.com/p3ol/eslint-config/commit/4bcec58bb1f31d33024d5893143865c349411f55))
+* fix resolve path for tsconfig.json ([eac7d8f](https://github.com/p3ol/eslint-config/commit/eac7d8f074e063b7b846461ab64c169a23dc0b11))
+* more flat configs ([c38970b](https://github.com/p3ol/eslint-config/commit/c38970b4112192c250b395bd5cc0aaa2e84072e3))
+* upgrade various packages ([5ad671f](https://github.com/p3ol/eslint-config/commit/5ad671f9f6c32aeb752a3958c161efc39334a2d4))
+* yeah I give up ([4b6b044](https://github.com/p3ol/eslint-config/commit/4b6b0442cc06c7d394776cd15de54385d1d1054f))
+
+
+
+
+
 ## [3.0.1](https://github.com/p3ol/eslint-config/compare/v3.0.0...v3.0.1) (2023-06-09)
 
 

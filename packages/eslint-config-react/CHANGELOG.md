@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [4.0.0](https://github.com/p3ol/eslint-config/compare/v3.0.1...v4.0.0) (2025-02-04)
+
+
+### Bug Fixes
+
+* a lot of flat config & ts issues ([b1f335e](https://github.com/p3ol/eslint-config/commit/b1f335e38d82702fa674a5e96acd1147695ca912))
+* fix linting ([e4157f7](https://github.com/p3ol/eslint-config/commit/e4157f729c196352ed7839b74d41a668e1ba0d28))
+* fix linting and other stuff ([881a61b](https://github.com/p3ol/eslint-config/commit/881a61b0e2426c8237cd515672b7b75fd3babd6f))
+* fix react config ([74cf915](https://github.com/p3ol/eslint-config/commit/74cf915b63bc5730a511d20222a523bdb43f1427))
+* more flat configs ([c38970b](https://github.com/p3ol/eslint-config/commit/c38970b4112192c250b395bd5cc0aaa2e84072e3))
+* upgrade various packages ([5ad671f](https://github.com/p3ol/eslint-config/commit/5ad671f9f6c32aeb752a3958c161efc39334a2d4))
+
+
+
+
+
 ## [3.0.1](https://github.com/p3ol/eslint-config/compare/v3.0.0...v3.0.1) (2023-06-09)
 
 
