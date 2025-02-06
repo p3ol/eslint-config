@@ -177,6 +177,7 @@ export const configs = {
         '@typescript-eslint/no-empty-function': OFF,
         '@typescript-eslint/no-floating-promises': OFF,
         '@typescript-eslint/no-unsafe-call': OFF,
+        '@typescript-eslint/no-unsafe-assignment': OFF,
         '@typescript-eslint/no-misused-promises': [ERROR, {
           checksVoidReturn: false,
         }],
