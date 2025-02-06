@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.0.3](https://github.com/p3ol/eslint-config/compare/v4.0.2...v4.0.3) (2025-02-06)
+
+
+### Bug Fixes
+
+* **base:** disable ts eslint strict mode for now ([9553bfc](https://github.com/p3ol/eslint-config/commit/9553bfcdf720413b1ee732c0bba20c796807b914))
+
+
+
+
+
 ## [4.0.2](https://github.com/p3ol/eslint-config/compare/v4.0.1...v4.0.2) (2025-02-04)
 
 

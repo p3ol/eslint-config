@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.0.3](https://github.com/p3ol/eslint-config/compare/v4.0.2...v4.0.3) (2025-02-06)
+
+**Note:** Version bump only for package @poool/eslint-config-react
+
+
+
+
+
 ## [4.0.2](https://github.com/p3ol/eslint-config/compare/v4.0.1...v4.0.2) (2025-02-04)
 
 **Note:** Version bump only for package @poool/eslint-config-react
