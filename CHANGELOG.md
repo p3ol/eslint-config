@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.0.4](https://github.com/p3ol/eslint-config/compare/v4.0.3...v4.0.4) (2025-02-06)
+
+
+### Bug Fixes
+
+* **base:** disable more unused rules ([3b17832](https://github.com/p3ol/eslint-config/commit/3b17832c94b0305da7173acce4d3d73a642e675e))
+
+
+
+
+
 ## [4.0.3](https://github.com/p3ol/eslint-config/compare/v4.0.2...v4.0.3) (2025-02-06)
 
 
