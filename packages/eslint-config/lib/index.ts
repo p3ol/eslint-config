@@ -147,6 +147,10 @@ export const configs = {
             ['parent', 'sibling', 'index', 'unknown'],
           ],
           'newlines-between': 'always',
+          pathGroups: [{
+            pattern: '~/**',
+            group: 'internal',
+          }],
         }],
         'import/no-named-as-default': OFF,
         'import/no-named-as-default-member': OFF,
