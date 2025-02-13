@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.0.5](https://github.com/p3ol/eslint-config/compare/v4.0.4...v4.0.5) (2025-02-13)
+
+
+### Bug Fixes
+
+* **base:** import order ~ path ([e0e1d96](https://github.com/p3ol/eslint-config/commit/e0e1d96874eac51c636f0e8aabba2f2da70cb1b9))
+* update various deps ([a6c075d](https://github.com/p3ol/eslint-config/commit/a6c075df0073e96f8ebc1673ef65ab7ddbbf03d6))
+
+
+
+
+
 ## [4.0.4](https://github.com/p3ol/eslint-config/compare/v4.0.3...v4.0.4) (2025-02-06)
 
 
