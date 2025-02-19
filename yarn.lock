@@ -1557,8 +1557,8 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@poool/eslint-config@workspace:packages/eslint-config"
   dependencies:
-    "@stylistic/eslint-plugin-js": "npm:3.1.0"
-    "@stylistic/eslint-plugin-ts": "npm:3.1.0"
+    "@stylistic/eslint-plugin-js": "npm:4.0.1"
+    "@stylistic/eslint-plugin-ts": "npm:4.0.1"
     eslint-import-resolver-typescript: "npm:3.8.1"
     eslint-plugin-import: "npm:2.31.0"
     eslint-plugin-jest: "npm:28.11.0"
@@ -1656,28 +1656,28 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@stylistic/eslint-plugin-js@npm:3.1.0":
-  version: 3.1.0
-  resolution: "@stylistic/eslint-plugin-js@npm:3.1.0"
+"@stylistic/eslint-plugin-js@npm:4.0.1":
+  version: 4.0.1
+  resolution: "@stylistic/eslint-plugin-js@npm:4.0.1"
   dependencies:
     eslint-visitor-keys: "npm:^4.2.0"
     espree: "npm:^10.3.0"
   peerDependencies:
-    eslint: ">=8.40.0"
-  checksum: 10c0/9842e943e17f37f5e163f1994466346bd9302bb95a754764cf5255b102b099c6eabf8c44c257a94fa9cb5df68c766d36ec4a0b0b27e404ce223fef995441da71
+    eslint: ">=9.0.0"
+  checksum: 10c0/a4512973d3a51b4b6f4f6a0c27b3e6df61cfff61caf55309e8727becf193fa804544d760fb774ae7d8db3d2983b4d974ad3af78ffd10a388a1ef1c84ce7f7b64
   languageName: node
   linkType: hard
 
-"@stylistic/eslint-plugin-ts@npm:3.1.0":
-  version: 3.1.0
-  resolution: "@stylistic/eslint-plugin-ts@npm:3.1.0"
+"@stylistic/eslint-plugin-ts@npm:4.0.1":
+  version: 4.0.1
+  resolution: "@stylistic/eslint-plugin-ts@npm:4.0.1"
   dependencies:
-    "@typescript-eslint/utils": "npm:^8.13.0"
+    "@typescript-eslint/utils": "npm:^8.23.0"
     eslint-visitor-keys: "npm:^4.2.0"
     espree: "npm:^10.3.0"
   peerDependencies:
-    eslint: ">=8.40.0"
-  checksum: 10c0/9e4d378e29c15ac8182c42e969e6ac2249edbffa9c096a79a083eb182802be14d4870fdc6da818c85f1104138ec2344c55b9f5458b95b7f0e92906448547036a
+    eslint: ">=9.0.0"
+  checksum: 10c0/c7c9f05db16b4fb1c0c0aedfac7fbe0e4c9e2562176e1d3360c54690f7b3d2b38b97578cad38526750ca50f8496ec6652e81de472d705e911043abe21effbf01
   languageName: node
   linkType: hard
 
@@ -2168,7 +2168,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@typescript-eslint/utils@npm:8.24.1":
+"@typescript-eslint/utils@npm:8.24.1, @typescript-eslint/utils@npm:^8.23.0":
   version: 8.24.1
   resolution: "@typescript-eslint/utils@npm:8.24.1"
   dependencies:
@@ -2183,7 +2183,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@typescript-eslint/utils@npm:^6.0.0 || ^7.0.0 || ^8.0.0, @typescript-eslint/utils@npm:^8.13.0":
+"@typescript-eslint/utils@npm:^6.0.0 || ^7.0.0 || ^8.0.0":
   version: 8.24.0
   resolution: "@typescript-eslint/utils@npm:8.24.0"
   dependencies:
