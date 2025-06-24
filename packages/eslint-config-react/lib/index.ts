@@ -53,10 +53,11 @@ const reactConfig: Linter.Config = {
   },
 };
 
-const reactConfigHooks = {
+const reactConfigHooks: Linter.Config = {
   files: ['**/*.{jsx,tsx}'],
   ...reactHooksConfigs['recommended-latest'],
 };
+
 export const configs = {
   recommended: tseslint.config(
     ...pooolint.configs.recommended,
