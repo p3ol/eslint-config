@@ -20,7 +20,8 @@
   },
   "devDependencies": {
     "@poool/eslint-config": "workspace:^",
-    "eslint-plugin-react": "7.37.4"
+    "eslint-plugin-react": "7.37.4",
+    "eslint-plugin-react-hooks": "5.2.0"
   },
   "publishConfig": {
     "access": "public"
