@@ -11,7 +11,6 @@ const ERROR = 2;
 const reactConfig: Linter.Config = {
   files: ['**/*.{jsx,tsx}'],
   ...reactPlugin.configs.flat?.recommended,
-  ...reactHooksConfigs['recommended-latest'],
   ...reactPlugin.configs.flat?.['jsx-runtime'],
   settings: {
     react: {
@@ -54,10 +53,16 @@ const reactConfig: Linter.Config = {
   },
 };
 
+const reactConfigHooks: Linter.Config = {
+  files: ['**/*.{jsx,tsx}'],
+  ...reactHooksConfigs['recommended-latest'],
+};
+
 export const configs = {
   recommended: tseslint.config(
     ...pooolint.configs.recommended,
     reactConfig,
+    reactConfigHooks,
   ),
   react: tseslint.config(reactConfig),
   base: tseslint.config(...pooolint.configs.recommended),
