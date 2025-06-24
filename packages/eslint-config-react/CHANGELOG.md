@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.1.1](https://github.com/p3ol/eslint-config/compare/v4.1.0...v4.1.1) (2025-06-24)
+
+
+### Bug Fixes
+
+* add missing export ([add685e](https://github.com/p3ol/eslint-config/commit/add685e794645006e1afd5e876620bd649f09394))
+* set hooks plugin in a separated config object ([09f5c99](https://github.com/p3ol/eslint-config/commit/09f5c99389ea5a2330a1f37806df0746c2ac2a63))
+* types and lint ([7a8c66a](https://github.com/p3ol/eslint-config/commit/7a8c66ab1c3b0465de1744137a80d559829928b7))
+
+
+
+
+
 # [4.1.0](https://github.com/p3ol/eslint-config/compare/v4.0.5...v4.1.0) (2025-06-24)
 
 
