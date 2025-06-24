@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [4.1.0](https://github.com/p3ol/eslint-config/compare/v4.0.5...v4.1.0) (2025-06-24)
+
+
+### Bug Fixes
+
+* add line ([bb6464c](https://github.com/p3ol/eslint-config/commit/bb6464c4992c702380a11b3e1f91c02dde6bfd2f))
+* **react:** add missing react hooks rules ([079d981](https://github.com/p3ol/eslint-config/commit/079d9814358ae30344a124fc3bbb90640ce7f8d9))
+* update various deps ([c3e848d](https://github.com/p3ol/eslint-config/commit/c3e848d8c10b3dab84308b9df267722bf87e3652))
+
+
+
+
+
 ## [4.0.5](https://github.com/p3ol/eslint-config/compare/v4.0.4...v4.0.5) (2025-02-13)
 
 **Note:** Version bump only for package @poool/eslint-config-react
