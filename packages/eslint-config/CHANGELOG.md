@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [4.1.0](https://github.com/p3ol/eslint-config/compare/v4.0.5...v4.1.0) (2025-06-24)
+
+
+### Bug Fixes
+
+* **config:** import plugin 2.32 compat ([cc25df0](https://github.com/p3ol/eslint-config/commit/cc25df0e75d95222ec69921bdfea7970a63ff20f))
+* update various deps ([c3e848d](https://github.com/p3ol/eslint-config/commit/c3e848d8c10b3dab84308b9df267722bf87e3652))
+
+
+### Features
+
+* **deps:** update dependency eslint-import-resolver-typescript to v3.8.1 ([96a0143](https://github.com/p3ol/eslint-config/commit/96a0143f0df68ec086c322fce54a274ba7c0e433))
+
+
+
+
+
 ## [4.0.5](https://github.com/p3ol/eslint-config/compare/v4.0.4...v4.0.5) (2025-02-13)
 
 
