@@ -1,5 +1,5 @@
-import { flatConfigs } from 'eslint-plugin-import';
 import eslint from '@eslint/js';
+import * as importPlugin from 'eslint-plugin-import';
 import tseslint from 'typescript-eslint';
 import stylisticJs from '@stylistic/eslint-plugin-js';
 import stylisticTs from '@stylistic/eslint-plugin-ts';
@@ -26,7 +26,8 @@ export const configs = {
       },
     },
     {
-      ...flatConfigs.recommended,
+      ...importPlugin.flatConfigs.recommended,
+      ...importPlugin.flatConfigs.typescript,
       settings: {
         'import/parsers': {
           '@typescript-eslint/parser': ['.ts', '.tsx'],
