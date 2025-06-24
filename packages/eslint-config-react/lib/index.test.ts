@@ -4,6 +4,7 @@ import { configs } from './index';
 
 const config = [
   ...configs.react as Linter.Config[],
+  ...configs.reactHooks as Linter.Config[],
 ];
 
 describe('@poool/eslint-config-react', () => {
@@ -489,6 +490,51 @@ describe('@poool/eslint-config-react', () => {
             ruleId: 'jsx-quotes',
             message: 'Unexpected usage of singlequote.',
             messageId: 'unexpected',
+            severity: 1,
+          }),
+        ]));
+    });
+  });
+
+  describe('react-hooks/exhaustive-deps', () => {
+    it('should pass when dependencies are correct', () => {
+      const code = `
+        import { useEffect } from 'react';
+
+        function MyComponent() {
+          useEffect(() => {
+            console.log('Hello world');
+          }, []);
+
+          return <div>Hello world</div>;
+        }
+      `;
+
+      expect(linter.verify(code, config, 'index.tsx'))
+        .not.toEqual(expect.arrayContaining([
+          expect.objectContaining({ ruleId: 'react-hooks/exhaustive-deps' }),
+        ]));
+    });
+
+    it('should warn when dependencies are missing', () => {
+      const code = `
+        import { useEffect } from 'react';
+
+        function MyComponent({ name }) {
+          useEffect(() => {
+            console.log(name);
+          }, []);
+
+          return <div>{name}</div>;
+        }
+      `;
+
+      expect(linter.verify(code, config, 'index.tsx'))
+        .toEqual(expect.arrayContaining([
+          expect.objectContaining({
+            ruleId: 'react-hooks/exhaustive-deps',
+            message: 'React Hook useEffect has a missing dependency: ' +
+              '\'name\'. Either include it or remove the dependency array.',
             severity: 1,
           }),
         ]));
