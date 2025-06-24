@@ -65,5 +65,6 @@ export const configs = {
     reactConfigHooks,
   ),
   react: tseslint.config(reactConfig),
+  reactHooks: tseslint.config(reactConfigHooks),
   base: tseslint.config(...pooolint.configs.recommended),
 };
