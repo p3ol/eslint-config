@@ -30,7 +30,7 @@
     "lerna": "8.2.2",
     "turbo": "2.5.4",
     "typescript": "5.8.3",
-    "typescript-eslint": "8.35.0"
+    "typescript-eslint": "8.36.0"
   },
   "packageManager": "yarn@4.9.2"
 }
