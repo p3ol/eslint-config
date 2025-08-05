@@ -52,7 +52,17 @@ describe('@poool/eslint-config', () => {
         const foo = {
           bar: 1,
         };
+
+        const baz: [string, number] = [
+          'foo',
+          42,
+        ];
       `;
+
+      expect(linter.verify(code, config, 'index.ts'))
+        .not.toEqual(expect.arrayContaining([
+          expect.objectContaining({ ruleId: '@stylistic/comma-dangle' }),
+        ]));
 
       expect(linter.verify(code, config, 'index.ts'))
         .not.toEqual(expect.arrayContaining([
