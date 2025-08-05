@@ -10,7 +10,7 @@
     "directory": "packages/eslint-config"
   },
   "engines": {
-    "node": ">=18"
+    "node": ">=20"
   },
   "author": "Ugo Stephant <ugo@poool.fr>",
   "license": "MIT",
@@ -19,12 +19,10 @@
     "typescript-eslint": "^8.13.0"
   },
   "dependencies": {
-    "@stylistic/eslint-plugin-js": "3.1.0",
-    "@stylistic/eslint-plugin-ts": "3.1.0",
-    "eslint-import-resolver-typescript": "3.10.1",
+    "@stylistic/eslint-plugin": "5.2.2",
+    "eslint-import-resolver-typescript": "4.4.4",
     "eslint-plugin-import": "2.32.0",
-    "eslint-plugin-jest": "28.14.0",
-    "react": "19.1.0"
+    "eslint-plugin-jest": "29.0.1"
   },
   "publishConfig": {
     "access": "public"

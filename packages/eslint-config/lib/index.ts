@@ -1,8 +1,7 @@
 import eslint from '@eslint/js';
 import * as importPlugin from 'eslint-plugin-import';
 import tseslint from 'typescript-eslint';
-import stylisticJs from '@stylistic/eslint-plugin-js';
-import stylisticTs from '@stylistic/eslint-plugin-ts';
+import stylistic from '@stylistic/eslint-plugin';
 import jest from 'eslint-plugin-jest';
 
 const OFF = 0;
@@ -57,8 +56,7 @@ export const configs = {
     },
     {
       plugins: {
-        '@stylistic/js': stylisticJs,
-        '@stylistic/ts': stylisticTs,
+        '@stylistic': stylistic,
       },
       languageOptions: {
         globals: {
@@ -69,16 +67,16 @@ export const configs = {
         },
       },
       rules: {
-        '@stylistic/js/arrow-parens': [WARNING, 'as-needed'],
-        '@stylistic/js/comma-dangle': [WARNING, {
+        '@stylistic/arrow-parens': [WARNING, 'as-needed'],
+        '@stylistic/comma-dangle': [WARNING, {
           arrays: 'always-multiline',
           objects: 'always-multiline',
           imports: 'always-multiline',
           exports: 'always-multiline',
           functions: 'ignore',
         }],
-        '@stylistic/js/eol-last': [WARNING, 'always'],
-        '@stylistic/js/indent': [ERROR, 2, {
+        '@stylistic/eol-last': [WARNING, 'always'],
+        '@stylistic/indent': [ERROR, 2, {
           SwitchCase: 1,
           VariableDeclarator: 1,
           outerIIFEBody: 1,
@@ -94,21 +92,21 @@ export const configs = {
           ignoredNodes: ['TemplateLiteral'],
           offsetTernaryExpressions: false,
         }],
-        '@stylistic/js/max-len': [WARNING, {
+        '@stylistic/max-len': [WARNING, {
           code: 80,
           ignorePattern: '^import .*',
         }],
-        '@stylistic/js/quotes': [WARNING, 'single', {
+        '@stylistic/quotes': [WARNING, 'single', {
           avoidEscape: true,
           allowTemplateLiterals: 'always',
         }],
-        '@stylistic/js/multiline-ternary': OFF,
-        '@stylistic/js/no-multiple-empty-lines': [WARNING, { max: 1 }],
-        '@stylistic/js/no-trailing-spaces': WARNING,
-        '@stylistic/js/object-curly-newline': OFF,
-        '@stylistic/js/object-property-newline': OFF,
-        '@stylistic/js/padded-blocks': OFF,
-        '@stylistic/js/padding-line-between-statements': [
+        '@stylistic/multiline-ternary': OFF,
+        '@stylistic/no-multiple-empty-lines': [WARNING, { max: 1 }],
+        '@stylistic/no-trailing-spaces': WARNING,
+        '@stylistic/object-curly-newline': OFF,
+        '@stylistic/object-property-newline': OFF,
+        '@stylistic/padded-blocks': OFF,
+        '@stylistic/padding-line-between-statements': [
           WARNING,
           { blankLine: 'always', prev: '*', next: 'block' },
           { blankLine: 'always', prev: 'block', next: '*' },
@@ -117,10 +115,10 @@ export const configs = {
           { blankLine: 'always', prev: '*', next: 'return' },
           { blankLine: 'any', prev: '*', next: ['case', 'default'] },
         ],
-        '@stylistic/js/semi': ERROR,
-        '@stylistic/js/space-before-function-paren': WARNING,
-        '@stylistic/js/spaced-comment': [WARNING, 'always'],
-        '@stylistic/js/template-curly-spacing': ERROR,
+        '@stylistic/semi': ERROR,
+        '@stylistic/space-before-function-paren': WARNING,
+        '@stylistic/spaced-comment': [WARNING, 'always'],
+        '@stylistic/template-curly-spacing': ERROR,
 
         // ESLint Built-in
         'camelcase': [ERROR, {

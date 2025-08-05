@@ -10,12 +10,14 @@
     "directory": "packages/eslint-config-react"
   },
   "engines": {
-    "node": ">=18"
+    "node": ">=20"
   },
   "author": "Ugo Stephant <ugo@poool.fr>",
   "license": "MIT",
   "peerDependencies": {
     "eslint": "^9.0.0",
+    "react": "*",
+    "react-dom": "*",
     "typescript-eslint": "^8.13.0"
   },
   "devDependencies": {

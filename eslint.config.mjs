@@ -1,9 +1,11 @@
-const tseslint = require('typescript-eslint');
+import tseslint from 'typescript-eslint';
 
-const pooolConfig = require('@poool/eslint-config');
-const pooolReactConfig = require('@poool/eslint-config-react');
+import pooolConfig from '@poool/eslint-config';
+import pooolReactConfig from '@poool/eslint-config-react';
 
-module.exports = tseslint.config(
+const __dirname = import.meta.dirname;
+
+export default tseslint.config(
   {
     ignores: ['node_modules', '**/dist', '.yarn', '.turbo'],
   },
@@ -33,12 +35,6 @@ module.exports = tseslint.config(
     files: ['*.ts', '**/*.ts'],
     rules: {
       '@typescript-eslint/no-unsafe-assignment': 0,
-    },
-  },
-  {
-    files: ['eslint.config.js'],
-    rules: {
-      '@typescript-eslint/no-require-imports': 0,
     },
   },
   ...pooolReactConfig.configs.react,

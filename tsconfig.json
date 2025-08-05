@@ -3,8 +3,8 @@
     "allowSyntheticDefaultImports": true,
     "esModuleInterop": true,
     "lib": ["ES2021"],
-    "module": "Node16",
-    "moduleResolution": "Node16",
+    "module": "nodenext",
+    "moduleResolution": "nodenext",
     "resolveJsonModule": true,
     "skipLibCheck": true,
     "sourceMap": true,
@@ -20,6 +20,7 @@
     "**/*.tsx",
     "**/*.js",
     "**/*.jsx",
+    "eslint.config.mjs",
   ],
   "exclude": ["**/dist/*"]
 }

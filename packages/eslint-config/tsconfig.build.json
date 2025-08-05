@@ -8,5 +8,5 @@
     "resolveJsonModule": true,
     "noEmit": false
   },
-  "exclude": ["**/*.test.ts", "jest.config.js", "./dist/*"]
+  "exclude": ["**/*.test.ts", "jest.config.ts", "./dist/*"]
 }
