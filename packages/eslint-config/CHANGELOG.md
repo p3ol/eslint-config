@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.0.2](https://github.com/p3ol/eslint-config/compare/v5.0.1...v5.0.2) (2025-08-05)
+
+
+### Bug Fixes
+
+* bad comma dangle rule ([fa48bf6](https://github.com/p3ol/eslint-config/commit/fa48bf604d3d5e15d3e93cef093ce38c38dc796e))
+
+
+
+
+
 ## [5.0.1](https://github.com/p3ol/eslint-config/compare/v5.0.0...v5.0.1) (2025-08-05)
 
 **Note:** Version bump only for package @poool/eslint-config
