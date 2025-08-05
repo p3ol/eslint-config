@@ -19,7 +19,7 @@ const config = [
 describe('@poool/eslint-config', () => {
   const linter = new eslint.Linter();
 
-  describe('@stylistic/js/arrow-parens', () => {
+  describe('@stylistic/arrow-parens', () => {
     it('should pass with arrow parens', () => {
       const code = `
         const foo = (bar, stuff = false) => bar;
@@ -28,7 +28,7 @@ describe('@poool/eslint-config', () => {
 
       expect(linter.verify(code, config, 'index.ts'))
         .not.toEqual(expect.arrayContaining([
-          expect.objectContaining({ ruleId: '@stylistic/js/arrow-parens' }),
+          expect.objectContaining({ ruleId: '@stylistic/arrow-parens' }),
         ]));
     });
 
@@ -39,14 +39,14 @@ describe('@poool/eslint-config', () => {
 
       expect(linter.verify(code, config, 'index.ts'))
         .toEqual(expect.arrayContaining([expect.objectContaining({
-          ruleId: '@stylistic/js/arrow-parens',
+          ruleId: '@stylistic/arrow-parens',
           message: 'Unexpected parentheses around single function argument.',
           severity: 1,
         })]));
     });
   });
 
-  describe('@stylistic/js/comma-dangle', () => {
+  describe('@stylistic/comma-dangle', () => {
     it('should pass with trailing comma', () => {
       const code = `
         const foo = {
@@ -56,7 +56,7 @@ describe('@poool/eslint-config', () => {
 
       expect(linter.verify(code, config, 'index.ts'))
         .not.toEqual(expect.arrayContaining([
-          expect.objectContaining({ ruleId: '@stylistic/js/comma-dangle' }),
+          expect.objectContaining({ ruleId: '@stylistic/comma-dangle' }),
         ]));
     });
 
@@ -69,14 +69,14 @@ describe('@poool/eslint-config', () => {
 
       expect(linter.verify(code, config, 'index.ts'))
         .toEqual(expect.arrayContaining([expect.objectContaining({
-          ruleId: '@stylistic/js/comma-dangle',
+          ruleId: '@stylistic/comma-dangle',
           message: 'Missing trailing comma.',
           severity: 1,
         })]));
     });
   });
 
-  describe('@stylistic/js/eol-last', () => {
+  describe('@stylistic/eol-last', () => {
     it('should pass with eol', () => {
       // explicit bad indent to avoid having content on eof line
       const code = `
@@ -85,7 +85,7 @@ describe('@poool/eslint-config', () => {
 
       expect(linter.verify(code, config, 'index.ts'))
         .not.toEqual(expect.arrayContaining([
-          expect.objectContaining({ ruleId: '@stylistic/js/eol-last' }),
+          expect.objectContaining({ ruleId: '@stylistic/eol-last' }),
         ]));
     });
 
@@ -95,14 +95,14 @@ describe('@poool/eslint-config', () => {
 
       expect(linter.verify(code, config, 'index.ts'))
         .toEqual(expect.arrayContaining([expect.objectContaining({
-          ruleId: '@stylistic/js/eol-last',
+          ruleId: '@stylistic/eol-last',
           message: 'Newline required at end of file but not found.',
           severity: 1,
         })]));
     });
   });
 
-  describe('@stylistic/js/indent', () => {
+  describe('@stylistic/indent', () => {
     it('should pass with indent', () => {
       const code = `
 if (true) {
@@ -112,7 +112,7 @@ if (true) {
 
       expect(linter.verify(code, config, 'index.ts'))
         .not.toEqual(expect.arrayContaining([
-          expect.objectContaining({ ruleId: '@stylistic/js/indent' }),
+          expect.objectContaining({ ruleId: '@stylistic/indent' }),
         ]));
     });
 
@@ -125,14 +125,14 @@ if (true) {
 
       expect(linter.verify(code, config, 'index.ts'))
         .toEqual(expect.arrayContaining([expect.objectContaining({
-          ruleId: '@stylistic/js/indent',
+          ruleId: '@stylistic/indent',
           message: 'Expected indentation of 0 spaces but found 6.',
           severity: 2,
         })]));
     });
   });
 
-  describe('@stylistic/js/max-len', () => {
+  describe('@stylistic/max-len', () => {
     it('should pass with max len', () => {
       const code = `
         const foo = 'foo';
@@ -141,7 +141,7 @@ if (true) {
 
       expect(linter.verify(code, config, 'index.ts'))
         .not.toEqual(expect.arrayContaining([
-          expect.objectContaining({ ruleId: '@stylistic/js/max-len' }),
+          expect.objectContaining({ ruleId: '@stylistic/max-len' }),
         ]));
     });
 
@@ -151,7 +151,7 @@ if (true) {
 
       expect(linter.verify(code, config, 'index.ts'))
         .not.toEqual(expect.arrayContaining([
-          expect.objectContaining({ ruleId: '@stylistic/js/max-len' }),
+          expect.objectContaining({ ruleId: '@stylistic/max-len' }),
         ]));
     });
 
@@ -163,14 +163,14 @@ if (true) {
 
       expect(linter.verify(code, config, 'index.ts'))
         .toEqual(expect.arrayContaining([expect.objectContaining({
-          ruleId: '@stylistic/js/max-len',
+          ruleId: '@stylistic/max-len',
           message: 'This line has a length of 116. Maximum allowed is 80.',
           severity: 1,
         })]));
     });
   });
 
-  describe('@stylistic/js/multiline-ternary', () => {
+  describe('@stylistic/multiline-ternary', () => {
     it('should pass with multiline ternary', () => {
       const code = `
         const foo = true
@@ -181,13 +181,13 @@ if (true) {
       expect(linter.verify(code, config, 'index.ts'))
         .not.toEqual(expect.arrayContaining([
           expect.objectContaining({
-            ruleId: '@stylistic/js/multiline-ternary',
+            ruleId: '@stylistic/multiline-ternary',
           }),
         ]));
     });
   });
 
-  describe('@stylistic/js/no-multiple-empty-lines', () => {
+  describe('@stylistic/no-multiple-empty-lines', () => {
     it('should pass with no multiple empty lines', () => {
       const code = `
         const foo = 1;
@@ -198,7 +198,7 @@ if (true) {
       expect(linter.verify(code, config, 'index.ts'))
         .not.toEqual(expect.arrayContaining([
           expect.objectContaining({
-            ruleId: '@stylistic/js/no-multiple-empty-lines',
+            ruleId: '@stylistic/no-multiple-empty-lines',
           }),
         ]));
     });
@@ -213,21 +213,21 @@ if (true) {
 
       expect(linter.verify(code, config, 'index.ts'))
         .toEqual(expect.arrayContaining([expect.objectContaining({
-          ruleId: '@stylistic/js/no-multiple-empty-lines',
+          ruleId: '@stylistic/no-multiple-empty-lines',
           message: 'More than 1 blank line not allowed.',
           severity: 1,
         })]));
     });
   });
 
-  describe('@stylistic/js/no-trailing-spaces', () => {
+  describe('@stylistic/no-trailing-spaces', () => {
     it('should pass with no trailing spaces', () => {
       const code = `const foo = 1;`;
 
       expect(linter.verify(code, config, 'index.ts'))
         .not.toEqual(expect.arrayContaining([
           expect.objectContaining({
-            ruleId: '@stylistic/js/no-trailing-spaces' }),
+            ruleId: '@stylistic/no-trailing-spaces' }),
         ]));
     });
 
@@ -236,14 +236,14 @@ if (true) {
 
       expect(linter.verify(code, config, 'index.ts'))
         .toEqual(expect.arrayContaining([expect.objectContaining({
-          ruleId: '@stylistic/js/no-trailing-spaces',
+          ruleId: '@stylistic/no-trailing-spaces',
           message: 'Trailing spaces not allowed.',
           severity: 1,
         })]));
     });
   });
 
-  describe('@stylistic/js/object-curly-newline', () => {
+  describe('@stylistic/object-curly-newline', () => {
     it('should pass with object curly newline', () => {
       const code = `
         const foo = {
@@ -255,13 +255,13 @@ if (true) {
       expect(linter.verify(code, config, 'index.ts'))
         .not.toEqual(expect.arrayContaining([
           expect.objectContaining({
-            ruleId: '@stylistic/js/object-curly-newline',
+            ruleId: '@stylistic/object-curly-newline',
           }),
         ]));
     });
   });
 
-  describe('@stylistic/js/object-property-newline', () => {
+  describe('@stylistic/object-property-newline', () => {
     it('should pass with object property newline', () => {
       const code = `
         const foo = { foo: 1, bar: 1 };
@@ -271,13 +271,13 @@ if (true) {
       expect(linter.verify(code, config, 'index.ts'))
         .not.toEqual(expect.arrayContaining([
           expect.objectContaining({
-            ruleId: '@stylistic/js/object-property-newline',
+            ruleId: '@stylistic/object-property-newline',
           }),
         ]));
     });
   });
 
-  describe('@stylistic/js/padded-blocks', () => {
+  describe('@stylistic/padded-blocks', () => {
     it('should pass with non-padded blocks', () => {
       const code = `
         if (true) {
@@ -287,12 +287,12 @@ if (true) {
 
       expect(linter.verify(code, config, 'index.ts'))
         .not.toEqual(expect.arrayContaining([
-          expect.objectContaining({ ruleId: '@stylistic/js/padded-blocks' }),
+          expect.objectContaining({ ruleId: '@stylistic/padded-blocks' }),
         ]));
     });
   });
 
-  describe('@stylistic/js/padding-line-between-statements', () => {
+  describe('@stylistic/padding-line-between-statements', () => {
     it('should pass with padding between blocks', () => {
       const code = `
         const foo = 1;
@@ -305,7 +305,7 @@ if (true) {
       expect(linter.verify(code, config, 'index.ts'))
         .not.toEqual(expect.arrayContaining([
           expect.objectContaining({
-            ruleId: '@stylistic/js/padding-line-between-statements',
+            ruleId: '@stylistic/padding-line-between-statements',
           }),
         ]));
     });
@@ -320,14 +320,13 @@ if (true) {
 
       expect(linter.verify(code, config, 'index.ts'))
         .toEqual(expect.arrayContaining([expect.objectContaining({
-          ruleId: '@stylistic/js/padding-line-between-statements',
+          ruleId: '@stylistic/padding-line-between-statements',
           message: 'Expected blank line before this statement.',
           severity: 1,
         })]));
     });
 
-    // FIX: Test throws an error not related to lint rule
-    it.skip('should warn on missing padding between blocks (return)', () => {
+    it('should warn on missing padding between blocks (return)', () => {
       const code = `
         const foo = 1;
         return foo;
@@ -335,14 +334,14 @@ if (true) {
 
       expect(linter.verify(code, config, 'index.ts'))
         .toEqual(expect.arrayContaining([expect.objectContaining({
-          ruleId: '@stylistic/js/padding-line-between-statements',
+          ruleId: '@stylistic/padding-line-between-statements',
           message: 'Expected blank line before this statement.',
           severity: 1,
         })]));
     });
   });
 
-  describe('@stylistic/js/semi', () => {
+  describe('@stylistic/semi', () => {
     it('should pass with semi', () => {
       const code = `
         const foo = 1;
@@ -351,7 +350,7 @@ if (true) {
 
       expect(linter.verify(code, config, 'index.ts'))
         .not.toEqual(expect.arrayContaining([
-          expect.objectContaining({ ruleId: '@stylistic/js/semi' }),
+          expect.objectContaining({ ruleId: '@stylistic/semi' }),
         ]));
     });
     it('should error on missing semi', () => {
@@ -362,14 +361,14 @@ if (true) {
 
       expect(linter.verify(code, config, 'index.ts'))
         .toEqual(expect.arrayContaining([expect.objectContaining({
-          ruleId: '@stylistic/js/semi',
+          ruleId: '@stylistic/semi',
           message: 'Missing semicolon.',
           severity: 2,
         })]));
     });
   });
 
-  describe('@stylistic/js/space-before-function-paren', () => {
+  describe('@stylistic/space-before-function-paren', () => {
     it('should pass with space before function paren', () => {
       const code = `
         function foo (){}
@@ -378,7 +377,7 @@ if (true) {
       expect(linter.verify(code, config, 'index.ts'))
         .not.toEqual(expect.arrayContaining([
           expect.objectContaining({
-            ruleId: '@stylistic/js/space-before-function-paren',
+            ruleId: '@stylistic/space-before-function-paren',
           }),
         ]));
     });
@@ -390,14 +389,14 @@ if (true) {
 
       expect(linter.verify(code, config, 'index.ts'))
         .toEqual(expect.arrayContaining([expect.objectContaining({
-          ruleId: '@stylistic/js/space-before-function-paren',
+          ruleId: '@stylistic/space-before-function-paren',
           message: 'Missing space before function parentheses.',
           severity: 1,
         })]));
     });
   });
 
-  describe('@stylistic/js/spaced-comment', () => {
+  describe('@stylistic/spaced-comment', () => {
     it('should pass with spaced comments', () => {
       const code = `
         // foo
@@ -406,7 +405,7 @@ if (true) {
 
       expect(linter.verify(code, config, 'index.ts'))
         .not.toEqual(expect.arrayContaining([
-          expect.objectContaining({ ruleId: '@stylistic/js/spaced-comment' }),
+          expect.objectContaining({ ruleId: '@stylistic/spaced-comment' }),
         ]));
     });
 
@@ -418,14 +417,14 @@ if (true) {
 
       expect(linter.verify(code, config, 'index.ts'))
         .toEqual(expect.arrayContaining([expect.objectContaining({
-          ruleId: '@stylistic/js/spaced-comment',
+          ruleId: '@stylistic/spaced-comment',
           message: 'Expected space or tab after \'//\' in comment.',
           severity: 1,
         })]));
     });
   });
 
-  describe('@stylistic/js/template-curly-spacing', () => {
+  describe('@stylistic/template-curly-spacing', () => {
     it('should pass with template curly spacing', () => {
       const code = `
         const foo = \`foo \${bar}\`;
@@ -434,7 +433,7 @@ if (true) {
       expect(linter.verify(code, config, 'index.ts'))
         .not.toEqual(expect.arrayContaining([
           expect.objectContaining({
-            ruleId: '@stylistic/js/template-curly-spacing',
+            ruleId: '@stylistic/template-curly-spacing',
           }),
         ]));
     });
@@ -446,7 +445,7 @@ if (true) {
 
       expect(linter.verify(code, config, 'index.ts'))
         .toEqual(expect.arrayContaining([expect.objectContaining({
-          ruleId: '@stylistic/js/template-curly-spacing',
+          ruleId: '@stylistic/template-curly-spacing',
           message: 'Unexpected space(s) after \'${\'.',
           severity: 2,
         })]));
