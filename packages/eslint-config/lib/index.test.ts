@@ -689,9 +689,13 @@ const bar = {
   describe('import/order', () => {
     it('should pass when imports respect order and newlines', () => {
       const code = `
-        import fs from 'fs';
+        import fs from 'node:fs';
+        import path from 'path';
 
-        import foo from 'src/foo';
+        import { subDays } from 'date-fns';
+
+        import foo from '~/src/foo';
+        import tests from '~/tests/foo';
 
         import bar from '../bar';
       `;
