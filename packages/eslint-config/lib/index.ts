@@ -92,7 +92,7 @@ export const configs = {
           ImportDeclaration: 1,
           flatTernaryExpressions: false,
           ignoreComments: false,
-          ignoredNodes: ['TemplateLiteral'],
+          ignoredNodes: ['TemplateLiteral', 'TSTypeParameterInstantiation'],
           offsetTernaryExpressions: false,
         }],
         '@stylistic/max-len': [WARNING, {

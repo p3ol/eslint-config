@@ -118,6 +118,16 @@ describe('@poool/eslint-config', () => {
 if (true) {
   console.log('foo');
 }
+
+const notif = await Notification
+  .find()
+  .populate<{
+    app: Pick<App, 'name'>;
+  }>('app', 'name');
+
+const bar = {
+  foo: 1,
+};
       `;
 
       expect(linter.verify(code, config, 'index.ts'))
