@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.0.4](https://github.com/p3ol/eslint-config/compare/v5.0.3...v5.0.4) (2025-08-08)
+
+
+### Bug Fixes
+
+* prevent another error on type indent ([e36b94a](https://github.com/p3ol/eslint-config/commit/e36b94af788d11a5876dc59cf5a9acfa9add40e0))
+
+
+
+
+
 ## [5.0.3](https://github.com/p3ol/eslint-config/compare/v5.0.2...v5.0.3) (2025-08-07)
 
 
