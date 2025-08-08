@@ -92,7 +92,22 @@ export const configs = {
           ImportDeclaration: 1,
           flatTernaryExpressions: false,
           ignoreComments: false,
-          ignoredNodes: ['TemplateLiteral', 'TSTypeParameterInstantiation'],
+          ignoredNodes: [
+            'TemplateLiteral',
+            /*
+              .populate<{
+                app: Pick<App, 'name'>;
+              }>('app', 'name');
+            */
+            'TSTypeParameterInstantiation',
+            /*
+            export interface Test {
+              [THIS_IS_A_LONG_IDENTIFIER]:
+                THIS_IS_ANOTHER_LONG_IDENTIFIER;
+            }
+            */
+            'TSTypeAnnotation',
+          ],
           offsetTernaryExpressions: false,
         }],
         '@stylistic/max-len': [WARNING, {

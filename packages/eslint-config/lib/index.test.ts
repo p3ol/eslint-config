@@ -128,6 +128,11 @@ const notif = await Notification
 const bar = {
   foo: 1,
 };
+
+export interface ServerEvents {
+  [SERVER_EVENT_REMOTE_PLAYER_ACCESSORY_UPDATED]:
+    ServerEventRemotePlayerAccessoryUpdated,
+};
       `;
 
       expect(linter.verify(code, config, 'index.ts'))
