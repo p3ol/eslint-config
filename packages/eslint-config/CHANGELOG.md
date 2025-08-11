@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.0.5](https://github.com/p3ol/eslint-config/compare/v5.0.4...v5.0.5) (2025-08-11)
+
+
+### Bug Fixes
+
+* **config:** stylistic issue update ([17e6f34](https://github.com/p3ol/eslint-config/commit/17e6f34b02c20c4f18b8f591f400f23c3e5178a9))
+
+
+
+
+
 ## [5.0.4](https://github.com/p3ol/eslint-config/compare/v5.0.3...v5.0.4) (2025-08-08)
 
 

@@ -1,6 +1,6 @@
 {
   "name": "@poool/eslint-config",
-  "version": "5.0.4",
+  "version": "5.0.5",
   "description": "Common ESLint rules we share between projects at Poool",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
