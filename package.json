@@ -18,7 +18,7 @@
   "devDependencies": {
     "@poool/eslint-config": "workspace:^",
     "@poool/eslint-config-react": "workspace:^",
-    "@swc/core": "1.13.3",
+    "@swc/core": "1.13.5",
     "@swc/jest": "0.2.39",
     "@types/eslint": "9.6.1",
     "@types/jest": "30.0.0",
