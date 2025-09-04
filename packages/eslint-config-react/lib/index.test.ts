@@ -1,10 +1,10 @@
-import eslint, { type Linter } from 'eslint';
+import eslint from 'eslint';
 
 import { configs } from './index';
 
 const config = [
-  ...configs.react as Linter.Config[],
-  ...configs.reactHooks as Linter.Config[],
+  ...configs.react,
+  ...configs.reactHooks,
 ];
 
 describe('@poool/eslint-config-react', () => {

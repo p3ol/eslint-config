@@ -1,5 +1,5 @@
 import type { Linter } from 'eslint';
-import tseslint from 'typescript-eslint';
+import { defineConfig } from 'eslint/config';
 import pooolint from '@poool/eslint-config';
 import reactPlugin from 'eslint-plugin-react';
 import { configs as reactHooksConfigs } from 'eslint-plugin-react-hooks';
@@ -59,12 +59,12 @@ const reactConfigHooks: Linter.Config = {
 };
 
 export const configs = {
-  recommended: tseslint.config(
-    ...pooolint.configs.recommended,
+  recommended: defineConfig(
+    pooolint.configs.recommended,
     reactConfig,
     reactConfigHooks,
   ),
-  react: tseslint.config(reactConfig),
-  reactHooks: tseslint.config(reactConfigHooks),
-  base: tseslint.config(...pooolint.configs.recommended),
+  react: defineConfig(reactConfig),
+  reactHooks: defineConfig(reactConfigHooks),
+  base: defineConfig(pooolint.configs.recommended),
 };

@@ -1,11 +1,11 @@
 import path from 'node:path';
 
-import eslint, { type Linter } from 'eslint';
+import eslint from 'eslint';
 
 import { configs } from './index';
 
 const config = [
-  ...configs.recommended as Linter.Config[],
+  ...configs.recommended,
   {
     languageOptions: {
       parserOptions: {

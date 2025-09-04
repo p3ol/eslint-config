@@ -1,15 +1,17 @@
-import tseslint from 'typescript-eslint';
+// @ts-check
+
+import { defineConfig } from 'eslint/config';
 
 import pooolConfig from '@poool/eslint-config';
 import pooolReactConfig from '@poool/eslint-config-react';
 
 const __dirname = import.meta.dirname;
 
-export default tseslint.config(
+export default defineConfig(
   {
     ignores: ['node_modules', '**/dist', '.yarn', '.turbo'],
   },
-  ...pooolConfig.configs.recommended,
+  pooolConfig.configs.recommended,
   {
     languageOptions: {
       parserOptions: {
@@ -37,5 +39,5 @@ export default tseslint.config(
       '@typescript-eslint/no-unsafe-assignment': 0,
     },
   },
-  ...pooolReactConfig.configs.react,
+  pooolReactConfig.configs.react,
 );

@@ -1,3 +1,4 @@
+import { defineConfig } from 'eslint/config';
 import eslint from '@eslint/js';
 import * as importPlugin from 'eslint-plugin-import';
 import tseslint from 'typescript-eslint';
@@ -9,11 +10,9 @@ const WARNING = 1;
 const ERROR = 2;
 
 export const configs = {
-  recommended: tseslint.config(
+  recommended: defineConfig(
     eslint.configs.recommended,
-    tseslint.configs.eslintRecommended,
-    ...tseslint.configs.recommendedTypeChecked,
-    ...tseslint.configs.stylisticTypeChecked,
+    tseslint.configs.recommended,
     {
       files: ['**/*.js', '**/*.cjs', '**/*.mjs'],
       ...tseslint.configs.disableTypeChecked,
