@@ -2,7 +2,7 @@ import type { Linter } from 'eslint';
 import { defineConfig } from 'eslint/config';
 import pooolint from '@poool/eslint-config';
 import reactPlugin from 'eslint-plugin-react';
-import { configs as reactHooksConfigs } from 'eslint-plugin-react-hooks';
+import reactHooks from 'eslint-plugin-react-hooks';
 
 // const OFF = 0;
 const WARNING = 1;
@@ -55,7 +55,7 @@ const reactConfig: Linter.Config = {
 
 const reactConfigHooks: Linter.Config = {
   files: ['**/*.{jsx,tsx}'],
-  ...reactHooksConfigs['recommended-latest'],
+  ...reactHooks.configs.flat.recommended,
 };
 
 export const configs = {
