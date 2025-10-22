@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.0.9](https://github.com/p3ol/eslint-config/compare/v5.0.8...v5.0.9) (2025-10-22)
+
+
+### Bug Fixes
+
+* **react:** disable another anoying react hooks rule ([3b80dc9](https://github.com/p3ol/eslint-config/commit/3b80dc94d43e2bddc3c7707a16be27efdde94a99))
+
+
+
+
+
 ## [5.0.8](https://github.com/p3ol/eslint-config/compare/v5.0.7...v5.0.8) (2025-10-22)
 
 
