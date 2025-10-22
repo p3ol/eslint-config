@@ -62,6 +62,7 @@ const reactConfigHooks: Linter.Config[] = defineConfig(
     rules: {
       'react-hooks/immutability': OFF,
       'react-hooks/refs': OFF,
+      'react-hooks/set-state-in-effect': OFF,
     },
   },
 );

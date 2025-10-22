@@ -40,4 +40,12 @@ export default defineConfig(
     },
   },
   pooolReactConfig.configs.react,
+  {
+    files: ['**/*.{jsx,tsx}'],
+    settings: {
+      react: {
+        version: 'detect',
+      },
+    },
+  },
 );
