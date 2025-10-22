@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.0.7](https://github.com/p3ol/eslint-config/compare/v5.0.6...v5.0.7) (2025-10-22)
+
+
+### Bug Fixes
+
+* **react:** react hooks v7 compat ([89e8389](https://github.com/p3ol/eslint-config/commit/89e8389543641ca53abffec296b08542f067a0ec))
+* upgrade various deps ([dee84ca](https://github.com/p3ol/eslint-config/commit/dee84ca8269927644c26a2403ee13d7aa4316205))
+
+
+
+
+
 ## [5.0.6](https://github.com/p3ol/eslint-config/compare/v5.0.5...v5.0.6) (2025-09-04)
 
 
