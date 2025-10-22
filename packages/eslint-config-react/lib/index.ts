@@ -4,7 +4,7 @@ import pooolint from '@poool/eslint-config';
 import reactPlugin from 'eslint-plugin-react';
 import reactHooks from 'eslint-plugin-react-hooks';
 
-// const OFF = 0;
+const OFF = 0;
 const WARNING = 1;
 const ERROR = 2;
 
@@ -56,6 +56,10 @@ const reactConfig: Linter.Config = {
 const reactConfigHooks: Linter.Config = {
   files: ['**/*.{jsx,tsx}'],
   ...reactHooks.configs.flat.recommended,
+  rules: {
+    'react-hooks/immutability': OFF,
+    'react-hooks/refs': OFF,
+  },
 };
 
 export const configs = {
