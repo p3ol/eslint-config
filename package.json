@@ -18,20 +18,20 @@
   "devDependencies": {
     "@poool/eslint-config": "workspace:^",
     "@poool/eslint-config-react": "workspace:^",
-    "@swc/core": "1.13.20",
+    "@swc/core": "1.15.5",
     "@swc/jest": "0.2.39",
     "@types/eslint": "9.6.1",
     "@types/jest": "30.0.0",
-    "@types/node": "24.9.1",
-    "@types/react": "19.2.2",
-    "@types/react-dom": "19.2.2",
-    "eslint": "9.38.0",
+    "@types/node": "25.0.2",
+    "@types/react": "19.2.7",
+    "@types/react-dom": "19.2.3",
+    "eslint": "9.39.2",
     "jest": "30.2.0",
-    "lerna": "9.0.0",
+    "lerna": "9.0.3",
     "ts-node": "10.9.2",
-    "turbo": "2.5.8",
+    "turbo": "2.6.3",
     "typescript": "5.9.3",
-    "typescript-eslint": "8.46.2"
+    "typescript-eslint": "8.50.0"
   },
   "packageManager": "yarn@4.12.0"
 }
