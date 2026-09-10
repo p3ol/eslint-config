@@ -24,7 +24,7 @@
     "@swc/jest": "0.2.39",
     "@types/eslint": "9.6.1",
     "@types/jest": "30.0.0",
-    "@types/node": "26.4.1",
+    "@types/node": "26.5.1",
     "@types/react": "19.2.18",
     "@types/react-dom": "19.2.5",
     "@typescript/native": "npm:typescript@7.0.2",
