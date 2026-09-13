@@ -20,7 +20,7 @@
     "@poool/eslint-config": "workspace:^",
     "@poool/eslint-config-react": "workspace:^",
     "@poool/oxfmt-config": "workspace:^",
-    "@swc/core": "1.16.1",
+    "@swc/core": "1.16.2",
     "@swc/jest": "0.2.39",
     "@types/eslint": "9.6.1",
     "@types/jest": "30.0.0",
